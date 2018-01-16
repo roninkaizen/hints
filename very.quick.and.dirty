@@ -1,0 +1,30 @@
+have a linux system, 
+
+be able to download the actual parity version
+
+at
+
+https://github.com/paritytech/parity/releases
+
+nowhere else!
+
+Get the deb file.
+Install it with sudo dpkg -i parity-1.8.n (tab-to-end)
+
+
+start manual time synchronisation with ntpq -p
+
+wait for the results
+
+start parity with 
+
+parity -v
+to now for yourself which version is now installed
+
+and then start parity without any parameters-
+
+it should start-
+with a standard config, you now start your own ethereum node,
+also able to use the ethereum classic chain with only one configuration flag-
+
+easy going
