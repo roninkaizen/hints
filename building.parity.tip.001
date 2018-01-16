@@ -1,0 +1,13 @@
+as you encounter errors on compiling parity
+
+just get rid of the older files
+
+with
+
+cleaning up and erasing any file within the directory
+
+/home/$USERNAME/.cargo/registry/src/
+
+after cleaning up the directory mentioned above
+
+use the cargo --clean command to get a new starting point
