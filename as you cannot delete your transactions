@@ -1,0 +1,16 @@
+on a host, which is not connected via ssh
+
+
+just declare it with the following line within the config.toml file
+
+no_persistent_txqueue = true
+No Persistent Transaction Queue
+Parity will not save local transaction queue to disk.
+
+or at the command line with
+
+parity --no-persistent-txqueue
+
+This solution to hanging transactions (not manually deleteable tx-queue based on files)
+was found on 17.01.2018 with assistance of a node running as droplet on a cloudserver he/she 
+did not wanted to name.
