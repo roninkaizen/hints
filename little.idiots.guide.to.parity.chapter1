@@ -15,3 +15,14 @@ Node gestartet.
 
 Node benutzen geht für mich nur mit Chrome/Chromium als Browser, alle anderen zeigen Mist an,
 totalen Mist, verwirrenden Mist, Unfug halt.
+
+Alles was wir brauchen steht unter status, dort angekommen, guckt man in Ruhe, was
+sich dort bei BestBlock zeigt.
+Diese Zahl sollte sich kontinuierlich nach oben bewegen, egal was in der console geschieht-
+wenn dem nicht so ist, einfach nach 2 Stunden genauer Überwachung sonst die Node entweder systemisch ganz neu starten
+oder wenn virtuell dort einen kompletten Reboot anwerfen/druchführen-
+danach sollte der Wert in Chrome kontinierlich steigen, bis parity dann irgendwann schreibt, daß es jetzt
+sync ist, das geschieht in der Regel und meiner persönlichen Erfahrung derzeit Block 4990585 etwa 5 Tage,
+wenn die node sauber "durchkommt" wesentlich schneller aber wenn man planen möchte sollte man auch bedenken,
+daß man das Risiko auf fail durch Einsatz eines zweiten Systems "weg"splittet und man lernt gleichermaßen 
+auf unterschiedlichen Systemen zu arbeiten/mit ethereum zu agieren.
