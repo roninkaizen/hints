@@ -1,0 +1,26 @@
+always make a small list-
+
+what do i want to reach with this change?
+define what you want to reach-
+could be any variant of the system, the runtime conditions of parity 
+or some other detail which could be changed
+
+1.how many and which steps are needed to reach the wanted chain
+
+2.is a "step-back" possible (way-back-routine-implementation)
+
+3.how to produce the first test run (conditions-system(s)-cli/toml-file), define conditions
+
+4.with comparison of awaited changes as "more" productive- (sorted by productivity in wanted (unwanted) manner)
+
+5.document yourself about the whole way of the implemented changes (then-then-then-if needed-number them)
+
+5.if-not-do-productive TEst-output was tested -- do not-alter-too-many-parameters- change one by one to get better results (repeat this until one or more indicated aims were reached)
+
+6.as several changes are required to reach the aimed changes- write them down, with date/Blocknumber (mark yourself this document to be important,if unsure, always produce a handwritten copy of the first one)
+
+7.change the first settings on the first system and activate logging in any way
+
+8.always write some notes, the running config is hard to alter while working with it
+
+9.feel free to look into the wiki and make a pull-request as you have corrections https://paritytech.github.io/wiki/
