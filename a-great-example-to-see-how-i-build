@@ -1,0 +1,409 @@
+quite early in the evening i decided to clone
+the actual master-branch into my downloads folder
+and to unpack it-
+afterwards the "not-so-funny" part with rust-
+that allmost confused me a while-
+
+to "keep" this time for what you really planned here my suggestions
+for today-
+
+remember, we do not have rust, knowing what we need-
+so done like in the paritys cookbook
+
+get rust now!
+
+mint@mint2 ~ $ curl https://sh.rustup.rs -sSf | sh
+
+info: downloading installer
+
+Welcome to Rust!
+
+This will download and install the official compiler for the Rust programming 
+language, and its package manager, Cargo.
+
+It will add the cargo, rustc, rustup and other commands to Cargo's bin 
+directory, located at:
+
+  /home/mint/.cargo/bin
+
+This path will then be added to your PATH environment variable by modifying the
+profile file located at:
+
+  /home/mint/.profile
+
+You can uninstall at any time with rustup self uninstall and these changes will
+be reverted.
+
+Current installation options:
+
+   default host triple: x86_64-unknown-linux-gnu
+     default toolchain: stable
+  modify PATH variable: yes
+
+1) Proceed with installation (default)
+2) Customize installation
+3) Cancel installation
+
+info: updating existing rustup installation
+
+
+Rust is installed now. Great!
+
+To get started you need Cargo's bin directory ($HOME/.cargo/bin) in your PATH 
+environment variable. Next time you log in this will be done automatically.
+
+To configure your current shell run source $HOME/.cargo/env
+mint@mint2 ~ $ source $HOME/.cargo/env
+mint@mint2 ~ $ cargo -V
+cargo 0.24.0 (45043115c 2017-12-05)
+mint@mint2 ~ $ rustup -V
+rustup 1.10.0 (c6a8f7c60 2018-01-25)
+mint@mint2 ~ $ cd Downloads
+mint@mint2 ~/Downloads $ cd parity-master/
+mint@mint2 ~/Downloads/parity-master $ cargo build --release
+   Compiling scoped-tls v0.1.0
+   Compiling safemem v0.2.0
+   Compiling cfg-if v0.1.2
+   Compiling rprompt v1.0.3
+   Compiling primal-estimate v0.2.1
+   Compiling scopeguard v0.3.2
+   Compiling language-tags v0.2.2
+   Compiling adler32 v1.0.2
+   Compiling rustc-demangle v0.1.5
+   Compiling quote v0.3.15
+   Compiling quick-error v1.2.1
+   Compiling slab v0.3.0
+   Compiling hamming v0.1.3
+   Compiling utf8-ranges v1.0.0
+   Compiling foreign-types-shared v0.1.1
+   Compiling byteorder v1.1.0
+   Compiling regex-syntax v0.4.1
+   Compiling rayon-core v1.3.0
+   Compiling siphasher v0.2.2
+   Compiling strsim v0.6.0
+   Compiling unicode-normalization v0.1.5
+   Compiling nodrop v0.1.12
+   Compiling sha1 v0.2.0
+   Compiling interleaved-ordered v0.1.1
+   Compiling tiny-keccak v1.4.0
+   Compiling spmc v0.2.2
+   Compiling num-traits v0.1.40
+   Compiling percent-encoding v1.0.0
+   Compiling winapi-build v0.1.1
+   Compiling version_check v0.1.3
+   Compiling integer-encoding v1.0.3
+   Compiling winapi v0.2.8
+   Compiling stable_deref_trait v1.0.0
+   Compiling untrusted v0.5.1
+   Compiling order-stat v0.1.3
+   Compiling linked-hash-map v0.4.2
+   Compiling libc v0.2.31
+   Compiling pkg-config v0.3.9
+   Compiling httparse v1.2.3
+   Compiling either v1.4.0
+   Compiling using_queue v0.1.0 (file:///home/mint/Downloads/parity-master/util/using_queue)
+   Compiling lazy_static v1.0.0
+   Compiling glob v0.2.11
+   Compiling hex v0.2.0
+   Compiling xdg v2.1.0
+   Compiling bitflags v0.7.0
+   Compiling futures v0.1.17
+   Compiling log v0.3.8
+   Compiling macros v0.1.0 (file:///home/mint/Downloads/parity-master/util/macros)
+   Compiling podio v0.1.5
+   Compiling mio-named-pipes v0.1.4 (https://github.com/alexcrichton/mio-named-pipes#9c1bbb98)
+   Compiling getopts v0.2.15
+   Compiling path v0.1.0 (file:///home/mint/Downloads/parity-master/util/path)
+   Compiling smallvec v0.2.1
+   Compiling semver-parser v0.7.0
+   Compiling ethcore-bytes v0.1.0 (file:///home/mint/Downloads/parity-master/util/bytes)
+   Compiling lazycell v0.5.1
+   Compiling protobuf v1.4.1
+   Compiling vec_map v0.8.0
+   Compiling unicode-segmentation v1.2.0
+   Compiling custom_derive v0.1.7
+   Compiling bit-vec v0.4.4
+   Compiling siphasher v0.1.3
+   Compiling unexpected v0.1.0 (file:///home/mint/Downloads/parity-master/util/unexpected)
+   Compiling crunchy v0.1.6
+   Compiling matches v0.1.6
+   Compiling ethcore-devtools v1.9.0 (file:///home/mint/Downloads/parity-master/devtools)
+   Compiling bitflags v0.8.2
+   Compiling bitflags v1.0.1
+   Compiling base32 v0.3.1
+   Compiling unicode-xid v0.0.4
+   Compiling bitflags v0.9.1
+   Compiling void v1.0.2
+   Compiling stop-guard v0.1.0 (file:///home/mint/Downloads/parity-master/util/stop-guard)
+   Compiling openssl v0.9.23
+   Compiling crossbeam v0.3.2
+   Compiling rustc-hex v1.0.0
+   Compiling ipnetwork v0.12.7
+   Compiling unicode-width v0.1.4
+   Compiling heapsize v0.4.1
+   Compiling semantic_version v0.1.0 (file:///home/mint/Downloads/parity-master/util/semantic_version)
+   Compiling base-x v0.2.2
+   Compiling typeable v0.1.2
+   Compiling edit-distance v2.0.0
+   Compiling take v0.1.0
+   Compiling target_info v0.1.0
+   Compiling lazy_static v0.2.8
+   Compiling term v0.4.6
+   Compiling rustc-serialize v0.3.24
+   Compiling fnv v1.0.5
+   Compiling slab v0.2.0
+   Compiling table v0.1.0 (file:///home/mint/Downloads/parity-master/util/table)
+   Compiling linked-hash-map v0.5.0
+   Compiling traitobject v0.1.0
+   Compiling ansi_term v0.10.2
+   Compiling dtoa v0.4.2
+   Compiling serde v1.0.27
+   Compiling itoa v0.3.4
+   Compiling primal-bit v0.2.4
+   Compiling foreign-types v0.3.2
+   Compiling libflate v0.1.11
+   Compiling base64 v0.6.0
+   Compiling arrayvec v0.4.7
+   Compiling ws2_32-sys v0.2.1
+   Compiling kernel32-sys v0.2.2
+   Compiling number_prefix v0.2.7
+   Compiling num-integer v0.1.35
+   Compiling subtle v0.1.0
+   Compiling owning_ref v0.3.3
+   Compiling unicase v1.4.2
+   Compiling unicase v2.1.0
+   Compiling lru-cache v0.1.1
+   Compiling rpassword v1.0.2
+   Compiling isatty v0.1.3
+   Compiling memmap v0.6.2
+   Compiling fdlimit v0.1.1
+   Compiling num_cpus v1.7.0
+   Compiling iovec v0.1.0
+   Compiling term_size v0.3.1
+   Compiling memchr v2.0.1
+   Compiling net2 v0.2.31
+   Compiling time v0.1.38
+   Compiling daemonize v0.2.3
+   Compiling rand v0.3.20
+   Compiling atty v0.2.2
+   Compiling coco v0.1.1
+   Compiling itertools v0.5.10
+   Compiling xml-rs v0.3.6
+   Compiling app_dirs v1.1.1
+   Compiling stats v0.1.0 (file:///home/mint/Downloads/parity-master/util/stats)
+   Compiling mime v0.2.6
+   Compiling tokio-timer v0.1.2
+   Compiling tokio-service v0.1.0
+   Compiling semver v0.6.0
+   Compiling pulldown-cmark v0.0.3
+   Compiling conv v0.3.3
+   Compiling bit-set v0.4.0
+   Compiling heck v0.3.0
+   Compiling ethcore-bloom-journal v0.1.0 (file:///home/mint/Downloads/parity-master/util/bloom)
+   Compiling unicode-bidi v0.3.4
+   Compiling synom v0.11.3
+   Compiling unreachable v1.0.0
+   Compiling unreachable v0.1.1
+   Compiling textwrap v0.9.0
+   Compiling multibase v0.6.0
+   Compiling num-complex v0.1.40
+   Compiling syntex_pos v0.58.1
+   Compiling num-iter v0.1.34
+   Compiling bincode v0.8.0
+   Compiling toml v0.4.5
+   Compiling serde_json v1.0.9
+   Compiling bytes v0.4.6
+   Compiling aho-corasick v0.6.4
+   Compiling futures-cpupool v0.1.6
+   Compiling mio v0.6.10
+   Compiling vergen v0.1.1
+   Compiling transient-hashmap v0.4.0
+   Compiling msdos_time v0.1.5
+   Compiling bn v0.4.4 (https://github.com/paritytech/bn#c9831a8d)
+   Compiling num-bigint v0.1.40
+   Compiling tempdir v0.3.5
+   Compiling uuid v0.5.1
+   Compiling parity-wordlist v1.2.0
+   Compiling rustc_version v0.2.1
+   Compiling xmltree v0.3.2
+   Compiling syn v0.11.11
+   Compiling thread_local v0.3.4
+   Compiling ordered-float v0.5.0
+   Compiling clap v2.29.1
+   Compiling idna v0.1.4
+   Compiling syntex_errors v0.58.1
+   Compiling tokio-io v0.1.3
+   Compiling rotor v0.6.3 (https://github.com/tailhook/rotor#80ce2e4c)
+   Compiling mio-uds v0.6.4
+   Compiling rayon v0.8.2
+   Compiling skeptic v0.4.0
+   Compiling num-rational v0.1.39
+   Compiling ethereum-types v0.1.4
+   Compiling uint v0.1.0
+   Compiling bigint v4.2.0
+   Compiling parity-version v1.10.0 (file:///home/mint/Downloads/parity-master/util/version)
+   Compiling regex v0.2.5
+   Compiling memory-cache v0.1.0 (file:///home/mint/Downloads/parity-master/util/memory_cache)
+   Compiling elastic-array v0.9.0
+   Compiling smallvec v0.4.3
+   Compiling fixed-hash v0.1.1
+   Compiling url v1.5.1
+   Compiling vecio v0.1.0
+   Compiling ctrlc v1.1.1 (https://github.com/paritytech/rust-ctrlc.git#b5230171)
+   Compiling miow v0.2.1
+   Compiling phf_shared v0.7.21
+   Compiling serde_derive_internals v0.19.0
+   Compiling rlp_derive v0.1.0 (file:///home/mint/Downloads/parity-master/util/rlp_derive)
+   Compiling mime v0.3.4
+   Compiling syntex_syntax v0.58.1
+   Compiling tokio-core v0.1.9
+   Compiling gcc v0.3.54
+   Compiling cc v1.0.0
+   Compiling local-encoding v0.2.0
+   Compiling num v0.1.40
+   Compiling primal-sieve v0.2.8
+   Compiling parking_lot_core v0.2.6
+   Compiling ethbloom v0.3.0
+   Compiling hyper v0.10.13
+   Compiling ws v0.7.1 (https://github.com/tomusdrw/ws-rs#f8306a79)
+   Compiling serde_urlencoded v0.5.1
+   Compiling cookie v0.3.1
+   Compiling phf_generator v0.7.21
+   Compiling phf v0.7.21
+   Compiling trezor-sys v1.0.0 (https://github.com/paritytech/trezor-sys#8a401705)
+   Compiling env_logger v0.4.3
+   Compiling globset v0.2.1
+   Compiling serde_derive v1.0.27
+   Compiling tokio-uds v0.1.5
+   Compiling tokio-proto v0.1.1
+   Compiling tokio-named-pipes v0.1.0 (https://github.com/nikvolf/tokio-named-pipes#0b9b728e)
+   Compiling parity-reactor v0.1.0 (file:///home/mint/Downloads/parity-master/util/reactor)
+   Compiling primal-check v0.2.2
+   Compiling rust-crypto v0.2.36
+   Compiling snappy-sys v0.1.0 (https://github.com/paritytech/rust-snappy#858eac97)
+   Compiling ring v0.12.1
+   Compiling backtrace-sys v0.1.14
+   Compiling libusb-sys v0.2.4 (https://github.com/paritytech/libusb-sys#14bdb698)
+   Compiling miniz-sys v0.1.10
+   Compiling keccak-hash v0.1.0 (file:///home/mint/Downloads/parity-master/util/hash)
+   Compiling hidapi v0.3.1 (https://github.com/paritytech/hidapi-rs#e77ea09c)
+   Compiling eth-secp256k1 v0.5.7 (https://github.com/paritytech/rust-secp256k1#6370d63a)
+   Compiling openssl-sys v0.9.23
+   Compiling rocksdb-sys v0.3.0 (https://github.com/paritytech/rust-rocksdb#ecf06adf)
+   Compiling parking_lot v0.4.8
+   Compiling parking_lot v0.5.3
+   Compiling bloomchain v0.2.0 (file:///home/mint/Downloads/parity-master/util/bloomchain)
+   Compiling hyper v0.10.0-a.0 (https://github.com/paritytech/hyper#da10f69a)
+   Compiling phf_codegen v0.7.21
+   Compiling igd v0.6.0
+   Compiling hyper v0.11.2
+   Compiling parity-tokio-ipc v0.1.5 (https://github.com/nikvolf/parity-tokio-ipc#d6c5b3cf)
+   Compiling primal v0.2.3
+   Compiling docopt v0.8.3
+   Compiling jsonrpc-core v8.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-1.9#9f4eb6db)
+   Compiling parity-wasm v0.15.3
+   Compiling ethcore-io v1.9.0 (file:///home/mint/Downloads/parity-master/util/io)
+   Compiling ethcore-logger v1.9.0 (file:///home/mint/Downloads/parity-master/logger)
+   Compiling mime_guess v2.0.0-alpha.2
+   Compiling rlp v0.2.1 (file:///home/mint/Downloads/parity-master/util/rlp)
+   Compiling hashdb v0.1.1 (file:///home/mint/Downloads/parity-master/util/hashdb)
+   Compiling plain_hasher v0.1.0 (file:///home/mint/Downloads/parity-master/util/plain_hasher)
+   Compiling ethjson v0.1.0 (file:///home/mint/Downloads/parity-master/json)
+   Compiling parity-machine v0.1.0 (file:///home/mint/Downloads/parity-master/machine)
+   Compiling jsonrpc-pubsub v8.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-1.9#9f4eb6db)
+   Compiling jsonrpc-server-utils v8.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-1.9#9f4eb6db)
+   Compiling wasm-utils v0.1.0 (https://github.com/paritytech/wasm-utils#3d59f7ca)
+   Compiling snappy v0.1.0 (https://github.com/paritytech/rust-snappy#858eac97)
+   Compiling jsonrpc-macros v8.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-1.9#9f4eb6db)
+   Compiling libusb v0.3.0 (https://github.com/paritytech/libusb-rs#44270895)
+   Compiling flate2 v0.2.20
+   Compiling memorydb v0.1.1 (file:///home/mint/Downloads/parity-master/util/memorydb)
+   Compiling common-types v0.1.0 (file:///home/mint/Downloads/parity-master/ethcore/types)
+   Compiling triehash v0.1.0 (file:///home/mint/Downloads/parity-master/util/triehash)
+   Compiling ethash v1.9.0 (file:///home/mint/Downloads/parity-master/ethash)
+   Compiling jsonrpc-http-server v8.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-1.9#9f4eb6db)
+   Compiling jsonrpc-tcp-server v8.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-1.9#9f4eb6db)
+   Compiling jsonrpc-ipc-server v8.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-1.9#9f4eb6db)
+   Compiling backtrace v0.3.5
+   Compiling ethkey v0.3.0 (file:///home/mint/Downloads/parity-master/ethkey)
+   Compiling multihash v0.7.0
+   Compiling aster v0.41.0
+   Compiling quasi v0.32.0
+   Compiling syntex v0.58.1
+   Compiling zip v0.1.19
+   Compiling patricia-trie v0.1.0 (file:///home/mint/Downloads/parity-master/util/patricia_trie)
+   Compiling ethcore-stratum v1.9.0 (file:///home/mint/Downloads/parity-master/stratum)
+   Compiling panic_hook v0.1.0 (file:///home/mint/Downloads/parity-master/util/panic_hook)
+   Compiling error-chain v0.11.0
+   Compiling cid v0.2.3
+   Compiling ethcrypto v0.1.0 (file:///home/mint/Downloads/parity-master/ethcrypto)
+   Compiling hardware-wallet v1.9.0 (file:///home/mint/Downloads/parity-master/hw)
+   Compiling native-tls v0.1.5
+   Compiling quasi_codegen v0.32.0
+   Compiling jsonrpc-ws-server v8.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-1.9#9f4eb6db)
+   Compiling ntp v0.3.1
+   Compiling kvdb v0.1.0 (file:///home/mint/Downloads/parity-master/util/kvdb)
+   Compiling ethabi v4.0.1
+   Compiling vm v0.1.0 (file:///home/mint/Downloads/parity-master/ethcore/vm)
+   Compiling ethcore-network v1.9.0 (file:///home/mint/Downloads/parity-master/util/network)
+   Compiling tokio-tls v0.1.3
+   Compiling node-health v0.1.0 (file:///home/mint/Downloads/parity-master/dapps/node-health)
+   Compiling kvdb-memorydb v0.1.0 (file:///home/mint/Downloads/parity-master/util/kvdb-memorydb)
+   Compiling util-error v0.1.0 (file:///home/mint/Downloads/parity-master/util/error)
+   Compiling evm v0.1.0 (file:///home/mint/Downloads/parity-master/ethcore/evm)
+   Compiling wasm v0.1.0 (file:///home/mint/Downloads/parity-master/ethcore/wasm)
+   Compiling parity-dapps-glue v1.9.1
+   Compiling hyper-tls v0.1.2
+   Compiling journaldb v0.1.0 (file:///home/mint/Downloads/parity-master/util/journaldb)
+   Compiling native-contract-generator v0.1.0 (file:///home/mint/Downloads/parity-master/ethcore/native_contracts/generator)
+   Compiling ethcore-transaction v0.1.0 (file:///home/mint/Downloads/parity-master/ethcore/transaction)
+   Compiling reqwest v0.8.1
+   Compiling parity-whisper v0.1.0 (file:///home/mint/Downloads/parity-master/whisper)
+   Compiling dir v0.1.0 (file:///home/mint/Downloads/parity-master/util/dir)
+   Compiling ethstore v0.2.0 (file:///home/mint/Downloads/parity-master/ethstore)
+   Compiling native-contracts v0.1.0 (file:///home/mint/Downloads/parity-master/ethcore/native_contracts)
+   Compiling fetch v0.1.0 (file:///home/mint/Downloads/parity-master/util/fetch)
+   Compiling parity-ui-precompiled v1.9.0 (https://github.com/js-dist-paritytech/parity-master-1-9-shell.git#f0cbc18b)
+   Compiling parity-ui-old-precompiled v1.9.0 (https://github.com/js-dist-paritytech/parity-master-1-9-v1.git#fae0129b)
+   Compiling price-info v1.7.0 (file:///home/mint/Downloads/parity-master/price-info)
+   Compiling parity-ui v1.9.0 (file:///home/mint/Downloads/parity-master/dapps/ui)
+   Compiling parity-hash-fetch v1.9.0 (file:///home/mint/Downloads/parity-master/hash-fetch)
+   Compiling ethcore-miner v1.9.0 (file:///home/mint/Downloads/parity-master/miner)
+   Compiling parity-dapps v1.9.0 (file:///home/mint/Downloads/parity-master/dapps)
+   Compiling rocksdb v0.4.5 (https://github.com/paritytech/rust-rocksdb#ecf06adf)
+   Compiling kvdb-rocksdb v0.1.0 (file:///home/mint/Downloads/parity-master/util/kvdb-rocksdb)
+   Compiling migration v0.1.0 (file:///home/mint/Downloads/parity-master/util/migration)
+   Compiling ethcore v1.9.0 (file:///home/mint/Downloads/parity-master/ethcore)
+   Compiling parity-local-store v0.1.0 (file:///home/mint/Downloads/parity-master/local-store)
+   Compiling node-filter v1.9.0 (file:///home/mint/Downloads/parity-master/ethcore/node_filter)
+   Compiling ethcore-migrations v0.1.0 (file:///home/mint/Downloads/parity-master/ethcore/migrations)
+   Compiling ethcore-light v1.9.0 (file:///home/mint/Downloads/parity-master/ethcore/light)
+   Compiling parity-ipfs-api v1.9.0 (file:///home/mint/Downloads/parity-master/ipfs)
+   Compiling ethsync v1.9.0 (file:///home/mint/Downloads/parity-master/sync)
+   Compiling parity-updater v1.9.0 (file:///home/mint/Downloads/parity-master/updater)
+   Compiling parity-rpc v1.9.0 (file:///home/mint/Downloads/parity-master/rpc)
+   Compiling parity-rpc-client v1.4.0 (file:///home/mint/Downloads/parity-master/rpc_client)
+   Compiling rpc-cli v1.4.0 (file:///home/mint/Downloads/parity-master/rpc_cli)
+   Compiling parity v1.10.0 (file:///home/mint/Downloads/parity-master)
+    Finished release [optimized] target(s) in 2307.51 secs
+
+Ouah- kind of unfair- i am very sorry but the first "dev-run" went through without any error-
+so from my sight about 2800 seconds later... "a little late to get that compile log"---
+maybe later.
+
+What i actually see after these 2307 seconds is following version plate
+
+Parity v1.10.0- unstable
+0x00838fD4B45a39ACA337A38692d18aB341753289
+4,998,203/5,008,673 syncing
+17/100 peers
+FOUNDATION
+
+that kind of fine for me, everything seems to be visible so far-
+some coins have to become visible but i am not stressed with that.
+
+as andre silva pushed the last content, also thanks specially to you,
+this version looks kind of that we spoke about-
+i am very confident with it.
+Thanks to the parity crew, i am finished for today-
+maybe later more. stay t00ned
