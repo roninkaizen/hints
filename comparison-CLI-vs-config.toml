@@ -27,7 +27,7 @@ config-file (config.toml)
 -on simplest errors within the config.toml parity cannot start->which confuses most users, like me about 10 months ago
 -easy to "whitespace" a config line with placing a simple # and to retest again
 
-
+ 
 whereas i don not develop the software now, 
 nor i plan to reprogram/reduce parity to my needs,
 it is decisive to know, that any version changes on parity can bring a working config from working-
