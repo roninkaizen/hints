@@ -1,3 +1,5 @@
+not wanted- occuring red background-
+
 today within the parity channel, the question came up, which configuration setup 
 could provide more advantages than others-
 to assure, there are just this two
@@ -25,7 +27,7 @@ config-file (config.toml)
 -one-click-button"yes-start-parity" possible within apple,win,linux
 -much more details than command line tool with more confort to edit (i like to get the config-generator back btw :wink:
 -on simplest errors within the config.toml parity cannot start->which confuses most users, like me about 10 months ago
--easy to "whitespace" a config line with placing a simple # and to retest again
+-easy to "whitespace" a config line with placing a simple (#) and to retest again
 
  
 whereas i don not develop the software now, 
