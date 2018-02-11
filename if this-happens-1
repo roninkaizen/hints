@@ -1,0 +1,21 @@
+
+if something like following happens
+
+
+2018-02-11 20:24:46 Syncing #4887441 2e74â€¦9d55 0 blk/s 12 tx/s 0 Mgas/s 348+ 1 Qed #4887791 0/50 peers 2 MiB chain 111 MiB db 24 MiB queue 5 MiB sync RPC: 2 conn, 1 req/s, 1768 Âµs
+2018-02-11 20:43:05 Finishing work, please wait...
+2018-02-11 20:43:31 Health request cancelled: Canceled
+2018-02-11 20:43:31 Health request cancelled: Canceled
+2018-02-11 20:43:31 Health request cancelled: Canceled
+2018-02-11 20:44:31 Shutdown is taking longer than expected.
+2018-02-11 20:48:31 Shutdown timeout reached, exiting uncleanly.
+
+
+i experienced no issues with reducing 
+
+the min-peers to 50-
+after restarting with changing this parameters the node became 
+more stable.
+
+
+next changes to be made are memory relevant
