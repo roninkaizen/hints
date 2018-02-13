@@ -555,5 +555,15 @@ sooooo geht das
 2018-02-13 20:58:48  Syncing #5080631 e5d6…67b7     0 blk/s   22 tx/s   1 Mgas/s    479+    1 Qed  #5081112    1/25 peers   17 MiB chain 108 MiB db 19 MiB queue 4 MiB sync  RPC:  0 conn,  0 req/s, 116 µs
 2018-02-13 21:00:31  Finishing work, please wait...
 
-
 yummy!
+
+Weil ich das vermutlich jederzeit wieder kann,
+
+gerne auch fragen,
+dieses Ergebnis scheint replizierbar,
+wenn ich mich noch mal damit in Ruhe auseinandergesetzt habe,
+komme ich bestimmt auch dazu, diesen Vorgang in einen Prozess zu gießen,
+will heißen, 
+daß genau das auch ein Programm erledigen kann,
+vermutlich eine rust-haskell-kombi,
+da schauen wir mal in Ruhe und für ether von jemand anders.
