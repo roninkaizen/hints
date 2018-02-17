@@ -1,0 +1,19 @@
+Today i am going to write about the infrastructural point of view.
+
+It also has to do with the following upcoming issue mentioned here:
+https://github.com/paritytech/parity/issues/7531
+
+It seems that the ehereum network structures do not grow as fast, as most of us wished in the early days of 2018-
+where we had over 24.000 active nodes within the ethereum network and the balances of the national overview began to swap.
+
+While us was the leading nation driving any kind of ethereum node, it seemed to me as if the chinese people,
+although limited by their admininstration to join icos they were able to manage to take part within the network
+whith "operating" nodes for interaction with the ethereum main-chain.
+
+From that day on, the splay of the widest spread changed until today concerning, 
+that chinese nodes play a more important role than before, 
+whereas it means also that the russion federation has gained more reliance from their administration-
+running mining-farms as well as nodes-
+and next nation to be mentioned with a increasing count of ethereum nodes-
+which exactly matches with my expectations- 
+canada is "th"e coming up krypto-oriented nation in 2018-
