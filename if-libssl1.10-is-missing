@@ -13,14 +13,54 @@ how to do-
 compile your own was my answer and it worked-
 step by step
 asking the system
-with openssl version gave out some 1.0.x
-which was not working with the intended parity version 1.9.3 which was about to be build.
+with openssl version gave out some "1.0.x"
+which was not working with the intended 
+parity version 1.9.3 which i was about to be build afterwards without the error
+
+dropped from the log-file
+------
+error: failed to run custom build command for `openssl-sys v0.9.23`
+process didn't exit successfully: `/home/jm/parity-1.9.3/target/debug/build/openssl-sys-d9848ac49e86ba14/build-script-build` (exit code: 101)
+--- stdout
+cargo:rerun-if-env-changed=X86_64_UNKNOWN_LINUX_GNU_OPENSSL_LIB_DIR
+cargo:rerun-if-env-changed=OPENSSL_LIB_DIR
+cargo:rerun-if-env-changed=X86_64_UNKNOWN_LINUX_GNU_OPENSSL_INCLUDE_DIR
+cargo:rerun-if-env-changed=OPENSSL_INCLUDE_DIR
+cargo:rerun-if-env-changed=X86_64_UNKNOWN_LINUX_GNU_OPENSSL_DIR
+cargo:rerun-if-env-changed=OPENSSL_DIR
+run pkg_config fail: "Failed to run `\"pkg-config\" \"--libs\" \"--cflags\" \"openssl\"`: No such file or directory (os error 2)"
+
+--- stderr
+thread 'main' panicked at '
+
+Could not find directory of OpenSSL installation, and this `-sys` crate cannot
+proceed without this knowledge. If OpenSSL is installed and this crate had
+trouble finding it,  you can set the `OPENSSL_DIR` environment variable for the
+compilation process.
+
+If you're in a situation where you think the directory *should* be found
+automatically, please open a bug at https://github.com/sfackler/rust-openssl
+and include information about your system as well as this message.
+
+    $HOST = x86_64-unknown-linux-gnu
+    $TARGET = x86_64-unknown-linux-gnu
+    openssl-sys = 0.9.23
+
+
+It looks like you're compiling on Linux and also targeting Linux. Currently this
+requires the `pkg-config` utility to find OpenSSL but unfortunately `pkg-config`
+could not be found. If you have OpenSSL installed you can likely fix this by
+installing `pkg-config`.
+------
+
+so we had an error throwing parity pre-build which did not have the right ssl-version
+
 we wanted to come to following:
 
 roninkaizen@nerfmalnichtrumjetzt:~$ openssl version
 OpenSSL 1.1.0g  2 Nov 2017
 
-Easy going-few steps-
+easy going-few steps-
 
 get openssl
 
@@ -36,12 +76,16 @@ extract from the above mentioned archive
 now follow him
 https://forums.servethehome.com/index.php?resources/installing-openssl-1-1-0-on-ubuntu.21/
 
-do exactly like what he wrote-
-and it works also for you on an ubuntu 16.04.x version trying to run or to build
+i cite the decisive lines
+
+./config -Wl,--enable-new-dtags,-rpath,'$(LIBRPATH)'
+make
+sudo make install
+
+i restarted my system afterwards also for other reasons and got afterwards following out
+openssl version
+OpenSSL 1.1.0g  2 Nov 2017
+
+as done like that "it" works also for you on an ubuntu 16.04.x version trying to run or to build
 any parity version larger that 1.8.8.
 
-feel free to donate if and only if
-
-it helped.
-
-https://etherscan.io/address/0x00933a786ee4d5d4592c0d1cf20b633c6a537f5f
