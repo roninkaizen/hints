@@ -1,0 +1,47 @@
+Referring to an issue:
+
+looking here
+https://github.com/paritytech/parity/issues/7826
+a double of https://github.com/paritytech/parity/issues/7792
+
+also little to do with 
+https://github.com/paritytech/parity/pull/7830
+
+however- i needed a little "faster" solution to this-
+how to do-
+
+compile your own was my answer and it worked-
+step by step
+asking the system
+with openssl version gave out some 1.0.x
+which was not working with the intended parity version 1.9.3 which was about to be build.
+we wanted to come to following:
+
+roninkaizen@nerfmalnichtrumjetzt:~$ openssl version
+OpenSSL 1.1.0g  2 Nov 2017
+
+Easy going-few steps-
+
+get openssl
+
+get it here
+https://codeload.github.com/openssl/openssl/tar.gz/OpenSSL_1_1_0g
+
+check if the file with md5 or something else-
+this is a security relevant subsystem therefore be sure what you change within your system-
+do not harm any other interests or projects!
+
+extract from the above mentioned archive
+
+now follow him
+https://forums.servethehome.com/index.php?resources/installing-openssl-1-1-0-on-ubuntu.21/
+
+do exactly like what he wrote-
+and it works also for you on an ubuntu 16.04.x version trying to run or to build
+any parity version larger that 1.8.8.
+
+feel free to donate if and only if
+
+it helped.
+
+https://etherscan.io/address/0x00933a786ee4d5d4592c0d1cf20b633c6a537f5f
