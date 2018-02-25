@@ -1,0 +1,38 @@
+tja,
+
+heute ein kurzes Log
+
+
+mint@mint-HP-Compaq-dc5700-Microtower ~/Downloads/parity-stable/target/release $ parity --cache-size 3172 --log-file par-a5build-afterwarp9-22022018.log
+2018-02-25 00:58:31  Starting Parity/v1.9.2-beta-0feb0bb6e-20180201/x86_64-linux-gnu/rustc1.23.0
+2018-02-25 00:58:31  Keys path /home/mint/.local/share/io.parity.ethereum/keys/Foundation
+2018-02-25 00:58:31  DB path /home/mint/.local/share/io.parity.ethereum/chains/ethereum/db/906a34e69aec8c0d
+2018-02-25 00:58:31  Path to dapps /home/mint/.local/share/io.parity.ethereum/dapps
+2018-02-25 00:58:31  State DB configuration: fast
+2018-02-25 00:58:31  Operating mode: active
+2018-02-25 00:58:32  Configured for Foundation using Ethash engine
+2018-02-25 00:58:33  Updated conversion rate to ?1 = US$833.46 (142835420 wei/gas)
+2018-02-25 00:58:45  Attempting to get parity binary 9a22…06a1
+2018-02-25 00:58:49  Public node URL: enode://6a84ded7c81d6e28854de96a53e36eb79c118b401e437286e397524587412ea4f5b214adda6cbeee37ca28d55796ce6c19198430df06d7aa285c4be7f60e88bb@192.168.0.26:30303
+2018-02-25 00:58:52  Syncing #5150690 37df…cebd     0 blk/s    0 tx/s   0 Mgas/s      0+    0 Qed  #5150690    8/25 peers   85 KiB chain 66 MiB db 0 bytes queue 25 KiB sync  RPC:  3 conn, 14 req/s, 796435 µs
+2018-02-25 00:59:02  Syncing #5150690 37df…cebd     0 blk/s    0 tx/s   0 Mgas/s      4+    1 Qed  #5150697    9/25 peers   85 KiB chain 66 MiB db 148 KiB queue 22 KiB sync  RPC:  3 conn, 14 req/s, 581517 µs
+2018-02-25 00:59:12  Syncing #5150691 03d4…d5df     0 blk/s    9 tx/s   0 Mgas/s      4+    1 Qed  #5150697   20/25 peers   96 KiB chain 66 MiB db 148 KiB queue 22 KiB sync  RPC:  3 conn, 14 req/s, 712857 µs
+2018-02-25 00:59:22  Syncing #5150691 03d4…d5df     0 blk/s    0 tx/s   0 Mgas/s      6+    1 Qed  #5150698   21/25 peers   96 KiB chain 66 MiB db 189 KiB queue 22 KiB sync  RPC:  3 conn, 15 req/s, 712857 µs
+2018-02-25 00:59:32  Syncing #5150693 9e17…c888     0 blk/s   10 tx/s   1 Mgas/s      5+    1 Qed  #5150699   20/25 peers   105 KiB chain 67 MiB db 172 KiB queue 23 KiB sync  RPC:  3 conn, 15 req/s, 712857 µs
+2018-02-25 00:59:42  Syncing #5150694 2cd7…d98b     0 blk/s    4 tx/s   0 Mgas/s      5+    0 Qed  #5150699   20/25 peers   123 KiB chain 67 MiB db 152 KiB queue 23 KiB sync  RPC:  3 conn,  0 req/s, 712857 µs
+2018-02-25 00:59:52  Syncing #5150695 f6f8…a5c7     0 blk/s    1 tx/s   0 Mgas/s      3+    1 Qed  #5150699   20/25 peers   176 KiB chain 67 MiB db 140 KiB queue 23 KiB sync  RPC:  3 conn,  4 req/s, 223857 µs
+2018-02-25 01:00:10  Fetched latest version (1.9.3-beta-804d…b95b) OK to /tmp/R00Dr6Ppn5GY
+2018-02-25 01:00:10  Installed updated binary to /home/mint/.local/share/io.parity.ethereum-updates/parity-1.9.3-804ddfe31e3c3abf6209997a84c40746c91cb95b
+2018-02-25 01:00:27  Syncing #5150697 7d08…93a2     0 blk/s    0 tx/s   0 Mgas/s      4+    1 Qed  #5150698   19/25 peers   213 KiB chain 67 MiB db 152 KiB queue 23 KiB sync  RPC:  3 conn,  1 req/s, 1011 µs
+2018-02-25 01:00:37  Syncing #5150698 a523…c42a     0 blk/s    9 tx/s   1 Mgas/s      4+    1 Qed  #5150702   21/25 peers   214 KiB chain 67 MiB db 250 KiB queue 23 KiB sync  RPC:  3 conn,  5 req/s, 306 µs
+2018-02-25 01:00:47  Syncing #5150699 366b…2c40     0 blk/s    6 tx/s   0 Mgas/s      3+    1 Qed  #5150702   23/25 peers   810 KiB chain 67 MiB db 218 KiB queue 23 KiB sync  RPC:  3 conn,  5 req/s, 7890 µs
+
+was sehen wir, jaaaa
+die Node versucht um 00:58 die Version 1.9.3 zu holen-
+um 01:00:10 holt sich die node die aktuelle Version und zieht diese und installiert automatisch-
+sehr, sehr schön!
+
+Wenn man das noch nicht gesehen hat, hier ein wunderbares Log in dem man das man sieht.
+
+Gute Sache das, zumal meine Node etwa 1000.Blöcke hinten ist, mal schauen, wie lange es dauert, 
+bis sie wieder komplett sync ist.
