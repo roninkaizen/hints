@@ -1,0 +1,353 @@
+mint@mint~/Downloads/parity-sharding $ cargo build --release
+   Compiling linked-hash-map v0.4.2
+   Compiling scopeguard v0.3.2
+   Compiling rprompt v1.0.3
+   Compiling nodrop v0.1.12
+   Compiling rustc-demangle v0.1.5
+   Compiling take v0.1.0
+   Compiling winapi-build v0.1.1
+   Compiling crunchy v0.1.6
+   Compiling utf8-ranges v1.0.0
+   Compiling base-x v0.2.2
+   Compiling hamming v0.1.3
+   Compiling using_queue v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/using_queue)
+   Compiling dtoa v0.4.2
+   Compiling stable_deref_trait v1.0.0
+   Compiling unicode-normalization v0.1.5
+   Compiling bitflags v0.7.0
+   Compiling bitflags v0.9.1
+   Compiling stop-guard v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/stop-guard)
+   Compiling slab v0.2.0
+   Compiling ethabi-contract v5.0.3
+   Compiling xdg v2.1.0
+   Compiling strsim v0.6.0
+   Compiling scoped-tls v0.1.0
+   Compiling target_info v0.1.0
+   Compiling mio-named-pipes v0.1.4 (https://github.com/alexcrichton/mio-named-pipes#9c1bbb98)
+   Compiling edit-distance v2.0.0
+   Compiling num-traits v0.2.2
+   Compiling regex-syntax v0.4.1
+   Compiling ethcore-bytes v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/bytes)
+   Compiling spmc v0.2.2
+   Compiling lazy_static v1.0.0
+   Compiling bitflags v1.0.1
+   Compiling getopts v0.2.15
+   Compiling fnv v1.0.5
+   Compiling custom_derive v0.1.7
+   Compiling subtle v0.5.1
+   Compiling cfg-if v0.1.2
+   Compiling siphasher v0.2.2
+   Compiling unicode-width v0.1.4
+   Compiling unicode-segmentation v1.2.0
+   Compiling vec_map v0.8.0
+   Compiling unicode-xid v0.0.4
+   Compiling protobuf v1.5.1
+   Compiling language-tags v0.2.2
+   Compiling order-stat v0.1.3
+   Compiling rustc-serialize v0.3.24
+   Compiling ipnetwork v0.12.7
+   Compiling byteorder v1.2.1
+   Compiling rayon-core v1.4.0
+   Compiling safemem v0.2.0
+   Compiling unicode-xid v0.1.0
+   Compiling httparse v1.2.3
+   Compiling futures v0.1.21
+   Compiling siphasher v0.1.3
+   Compiling ansi_term v0.10.2
+   Compiling quick-error v1.2.1
+   Compiling void v1.0.2
+   Compiling slab v0.3.0
+   Compiling primal-estimate v0.2.1
+   Compiling percent-encoding v1.0.0
+   Compiling libc v0.2.36
+   Compiling lazycell v0.6.0
+   Compiling term v0.4.6
+   Compiling winapi v0.2.8
+   Compiling untrusted v0.5.1
+   Compiling linked-hash-map v0.5.0
+   Compiling glob v0.2.11
+   Compiling semver-parser v0.7.0
+   Compiling matches v0.1.6
+   Compiling smallvec v0.2.1
+   Compiling podio v0.1.5
+   Compiling itoa v0.3.4
+   Compiling traitobject v0.1.0
+   Compiling rustc-hex v1.0.0
+   Compiling hex v0.2.0
+   Compiling bitflags v0.8.2
+   Compiling integer-encoding v1.0.3
+   Compiling serde v1.0.37
+   Compiling unexpected v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/unexpected)
+   Compiling memoffset v0.2.1
+   Compiling ethcore-devtools v1.11.0 (file:///home/mint/Downloads/parity-sharding/devtools)
+   Compiling bit-vec v0.4.4
+   Compiling lazy_static v0.2.11
+   Compiling interleaved-ordered v0.1.1
+   Compiling sha1 v0.2.0
+   Compiling typeable v0.1.2
+   Compiling heapsize v0.4.2
+   Compiling macros v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/macros)
+   Compiling memory_units v0.3.0
+   Compiling slab v0.4.0
+   Compiling path v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/path)
+   Compiling table v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/table)
+   Compiling crossbeam v0.3.2
+   Compiling base32 v0.3.1
+   Compiling either v1.4.0
+   Compiling version_check v0.1.3
+   Compiling lru-cache v0.1.1
+   Compiling arrayvec v0.4.7
+   Compiling ws2_32-sys v0.2.1
+   Compiling kernel32-sys v0.2.2
+   Compiling multibase v0.6.0
+   Compiling primal-bit v0.2.4
+   Compiling owning_ref v0.3.3
+   Compiling xml-rs v0.3.6
+   Compiling app_dirs v1.2.1
+   Compiling num-traits v0.1.43
+   Compiling num-integer v0.1.36
+   Compiling pulldown-cmark v0.0.3
+   Compiling conv v0.3.3
+   Compiling crossbeam-utils v0.2.2
+   Compiling crossbeam-utils v0.3.2
+   Compiling log v0.4.1
+   Compiling textwrap v0.9.0
+   Compiling heck v0.3.0
+   Compiling trezor-sys v1.0.0 (https://github.com/paritytech/trezor-sys#8a401705)
+   Compiling syntex_pos v0.58.1
+   Compiling base64 v0.6.0
+   Compiling base64 v0.9.0
+   Compiling proc-macro2 v0.3.1
+   Compiling tokio-executor v0.1.2
+   Compiling tokio-service v0.1.0
+   Compiling futures-timer v0.1.1
+   Compiling relay v0.1.1
+   Compiling ethcore-bloom-journal v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/bloom)
+   Compiling unreachable v1.0.0
+   Compiling unreachable v0.1.1
+   Compiling tokio-timer v0.1.2
+   Compiling isatty v0.1.3
+   Compiling fdlimit v0.1.1
+   Compiling daemonize v0.2.3 (https://github.com/paritytech/daemonize#df00295f)
+   Compiling rand v0.4.2
+   Compiling rpassword v1.0.2
+   Compiling net2 v0.2.31
+   Compiling num_cpus v1.7.0
+   Compiling memmap v0.6.2
+   Compiling term_size v0.3.1
+   Compiling rand v0.3.20
+   Compiling iovec v0.1.2
+   Compiling atty v0.2.2
+   Compiling memchr v2.0.1
+   Compiling time v0.1.38
+   Compiling semver v0.9.0
+   Compiling unicode-bidi v0.3.4
+   Compiling ethereum-types-serialize v0.2.1
+   Compiling toml v0.4.5
+   Compiling bit-set v0.4.0
+   Compiling itertools v0.5.10
+   Compiling unicase v2.1.0
+   Compiling unicase v1.4.2
+   Compiling xmltree v0.3.2
+   Compiling serde_json v1.0.9
+   Compiling bincode v0.8.0
+   Compiling number_prefix v0.2.7
+   Compiling num-iter v0.1.35
+   Compiling primal-check v0.2.3
+   Compiling crossbeam-epoch v0.3.1
+   Compiling crossbeam-epoch v0.4.1
+   Compiling log v0.3.9
+   Compiling syntex_errors v0.58.1
+   Compiling quote v0.5.1
+   Compiling tokio-timer v0.2.1
+   Compiling thread_local v0.3.4
+   Compiling ordered-float v0.5.0
+   Compiling bn v0.4.4 (https://github.com/paritytech/bn#964b48fa)
+   Compiling futures-cpupool v0.1.8
+   Compiling tempfile v2.2.0
+   Compiling tempdir v0.3.5
+   Compiling num-bigint v0.1.43
+   Compiling mio v0.6.14
+   Compiling bytes v0.4.6
+   Compiling clap v2.29.1
+   Compiling aho-corasick v0.6.4
+   Compiling vergen v0.1.1
+   Compiling msdos_time v0.1.5
+   Compiling transient-hashmap v0.4.0
+   Compiling rustc_version v0.2.2
+   Compiling idna v0.1.4
+   Compiling parity-wordlist v1.2.0
+   Compiling tiny-keccak v1.4.1
+   Compiling crossbeam-deque v0.2.0
+   Compiling crossbeam-deque v0.3.0
+   Compiling mime v0.2.6
+   Compiling trace-time v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/trace-time)
+   Compiling stats v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/stats)
+   Compiling syntex_syntax v0.58.1
+   Compiling syn v0.13.1
+   Compiling skeptic v0.4.0
+   Compiling num v0.1.42
+   Compiling rotor v0.6.3 (https://github.com/tailhook/rotor#80ce2e4c)
+   Compiling mio-uds v0.6.4
+   Compiling tokio-io v0.1.6
+   Compiling regex v0.2.5
+   Compiling ethereum-types v0.3.0
+   Compiling bigint v4.2.0
+   Compiling uint v0.2.0
+   Compiling parity-version v1.11.0 (file:///home/mint/Downloads/parity-sharding/util/version)
+   Compiling url v1.5.1
+   Compiling elastic-array v0.10.0
+   Compiling memory-cache v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/memory_cache)
+   Compiling fixed-hash v0.2.0
+   Compiling smallvec v0.4.3
+   Compiling vecio v0.1.0
+   Compiling miow v0.2.1
+   Compiling ctrlc v1.1.1 (https://github.com/paritytech/rust-ctrlc.git#b5230171)
+   Compiling tokio-threadpool v0.1.2
+   Compiling quasi v0.32.0
+   Compiling syntex v0.58.1
+   Compiling aster v0.41.0
+   Compiling serde_derive_internals v0.23.0
+   Compiling rlp_derive v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/rlp_derive)
+   Compiling local-encoding v0.2.0
+   Compiling tokio-reactor v0.1.1
+   Compiling env_logger v0.4.3
+   Compiling globset v0.2.1
+   Compiling ws v0.7.5 (https://github.com/tomusdrw/ws-rs#f12d19c4)
+   Compiling cookie v0.3.1
+   Compiling ethbloom v0.5.0
+   Compiling parking_lot_core v0.2.6
+   Compiling primal-sieve v0.2.8
+   Compiling mime v0.3.4
+   Compiling hyper v0.10.13
+   Compiling phf_shared v0.7.21
+   Compiling rayon v0.8.2
+   Compiling rayon v0.9.0
+   Compiling rayon v1.0.1
+   Compiling quasi_codegen v0.32.0
+   Compiling serde_derive v1.0.37
+   Compiling tokio-tcp v0.1.0
+   Compiling tokio-udp v0.1.0
+   Compiling hyper v0.10.0-a.0 (https://github.com/paritytech/hyper#da10f69a)
+   Compiling bloomchain v0.2.0 (file:///home/mint/Downloads/parity-sharding/util/bloomchain)
+   Compiling parking_lot v0.5.4
+   Compiling primal v0.2.3
+   Compiling igd v0.6.0
+   Compiling phf v0.7.21
+   Compiling phf_generator v0.7.21
+   Compiling gcc v0.3.54
+   Compiling cc v1.0.9
+   Compiling parity-dapps-glue v1.9.1
+   Compiling jsonrpc-core v8.0.1 (https://github.com/paritytech/jsonrpc.git?branch=parity-1.11#06bec6ab)
+   Compiling docopt v0.8.3
+   Compiling tokio v0.1.5
+   Compiling parity-wasm v0.27.5
+   Compiling ethcore-io v1.11.0 (file:///home/mint/Downloads/parity-sharding/util/io)
+   Compiling ethcore-logger v1.11.0 (file:///home/mint/Downloads/parity-sharding/logger)
+   Compiling phf_codegen v0.7.21
+   Compiling snappy-sys v0.1.0 (https://github.com/paritytech/rust-snappy#858eac97)
+   Compiling rust-crypto v0.2.36
+   Compiling backtrace-sys v0.1.14
+   Compiling keccak-hash v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/hash)
+   Compiling eth-secp256k1 v0.5.7 (https://github.com/paritytech/rust-secp256k1#db81cfea)
+   Compiling ring v0.12.1 (https://github.com/paritytech/ring#13eec162)
+   Compiling hidapi v0.3.1 (https://github.com/paritytech/hidapi-rs#e77ea09c)
+   Compiling miniz-sys v0.1.10
+   Compiling libusb-sys v0.2.4 (https://github.com/paritytech/libusb-sys#14bdb698)
+   Compiling rocksdb-sys v0.3.0 (https://github.com/paritytech/rust-rocksdb#ecf06adf)
+   Compiling jsonrpc-pubsub v8.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-1.11#06bec6ab)
+   Compiling tokio-core v0.1.16
+   Compiling hashdb v0.1.1 (file:///home/mint/Downloads/parity-sharding/util/hashdb)
+   Compiling plain_hasher v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/plain_hasher)
+   Compiling rlp v0.2.1 (file:///home/mint/Downloads/parity-sharding/util/rlp)
+   Compiling parity-machine v0.1.0 (file:///home/mint/Downloads/parity-sharding/machine)
+   Compiling ethjson v0.1.0 (file:///home/mint/Downloads/parity-sharding/json)
+   Compiling pwasm-utils v0.1.3
+   Compiling wasmi v0.1.2
+   Compiling mime_guess v2.0.0-alpha.2
+   Compiling jsonrpc-macros v8.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-1.11#06bec6ab)
+   Compiling jsonrpc-server-utils v8.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-1.11#06bec6ab)
+   Compiling tokio-uds v0.1.5
+   Compiling parity-reactor v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/reactor)
+   Compiling tokio-proto v0.1.1
+   Compiling tokio-named-pipes v0.1.0 (https://github.com/nikvolf/tokio-named-pipes#0b9b728e)
+   Compiling rlp_compress v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/rlp_compress)
+   Compiling jsonrpc-tcp-server v8.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-1.11#06bec6ab)
+   Compiling hyper v0.11.24
+   Compiling parity-tokio-ipc v0.1.5 (https://github.com/nikvolf/parity-tokio-ipc#d6c5b3cf)
+   Compiling snappy v0.1.0 (https://github.com/paritytech/rust-snappy#858eac97)
+   Compiling backtrace v0.3.5
+   Compiling memorydb v0.1.1 (file:///home/mint/Downloads/parity-sharding/util/memorydb)
+   Compiling ethash v1.11.0 (file:///home/mint/Downloads/parity-sharding/ethash)
+   Compiling common-types v0.1.0 (file:///home/mint/Downloads/parity-sharding/ethcore/types)
+   Compiling triehash v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/triehash)
+   Compiling ethkey v0.3.0 (file:///home/mint/Downloads/parity-sharding/ethkey)
+   Compiling multihash v0.7.0
+   Compiling sct v0.2.0
+   Compiling webpki v0.17.0
+   Compiling flate2 v0.2.20
+   Compiling libusb v0.3.0 (https://github.com/paritytech/libusb-rs#44270895)
+   Compiling ethcore-stratum v1.11.0 (file:///home/mint/Downloads/parity-sharding/stratum)
+   Compiling jsonrpc-http-server v8.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-1.11#06bec6ab)
+   Compiling jsonrpc-ipc-server v8.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-1.11#06bec6ab)
+   Compiling rocksdb v0.4.5 (https://github.com/paritytech/rust-rocksdb#ecf06adf)
+   Compiling error-chain v0.11.0
+   Compiling panic_hook v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/panic_hook)
+   Compiling patricia-trie v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/patricia_trie)
+   Compiling ethcrypto v0.1.0 (file:///home/mint/Downloads/parity-sharding/ethcrypto)
+   Compiling cid v0.2.3
+   Compiling ct-logs v0.2.0
+   Compiling webpki-roots v0.13.0
+   Compiling rustls v0.11.0
+   Compiling zip v0.1.19
+   Compiling hardware-wallet v1.11.0 (file:///home/mint/Downloads/parity-sharding/hw)
+   Compiling parity-ui-precompiled v1.9.0 (https://github.com/js-dist-paritytech/parity-master-1-10-shell.git?rev=bd25b41cd642c6b822d820dded3aa601a29aa079#bd25b41c)
+   Compiling parity-ui-old-precompiled v1.9.0 (https://github.com/js-dist-paritytech/parity-master-1-10-wallet.git?rev=4b6f112412716cd05123d32eeb7fda448288a6c6#4b6f1124)
+   Compiling kvdb v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/kvdb)
+   Compiling ethabi v5.1.1
+   Compiling jsonrpc-ws-server v8.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-1.11#06bec6ab)
+   Compiling ntp v0.3.1
+   Compiling vm v0.1.0 (file:///home/mint/Downloads/parity-sharding/ethcore/vm)
+   Compiling ethcore-network v1.11.0 (file:///home/mint/Downloads/parity-sharding/util/network)
+   Compiling tokio-rustls v0.4.0
+   Compiling kvdb-memorydb v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/kvdb-memorydb)
+   Compiling kvdb-rocksdb v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/kvdb-rocksdb)
+   Compiling util-error v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/error)
+   Compiling ethabi-derive v5.1.2
+   Compiling node-health v0.1.0 (file:///home/mint/Downloads/parity-sharding/dapps/node-health)
+   Compiling evm v0.1.0 (file:///home/mint/Downloads/parity-sharding/ethcore/evm)
+   Compiling wasm v0.1.0 (file:///home/mint/Downloads/parity-sharding/ethcore/wasm)
+   Compiling parity-whisper v0.1.0 (file:///home/mint/Downloads/parity-sharding/whisper)
+   Compiling ethcore-network-devp2p v1.11.0 (file:///home/mint/Downloads/parity-sharding/util/network-devp2p)
+   Compiling hyper-rustls v0.11.0
+   Compiling migration v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/migration)
+   Compiling journaldb v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/journaldb)
+   Compiling registrar v0.0.1 (file:///home/mint/Downloads/parity-sharding/registrar)
+   Compiling ethcore-transaction v0.1.0 (file:///home/mint/Downloads/parity-sharding/ethcore/transaction)
+   Compiling fetch v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/fetch)
+   Compiling parity-ui v1.11.0 (file:///home/mint/Downloads/parity-sharding/dapps/ui)
+   Compiling ethcore-migrations v0.1.0 (file:///home/mint/Downloads/parity-sharding/ethcore/migrations)
+   Compiling dir v0.1.0 (file:///home/mint/Downloads/parity-sharding/util/dir)
+   Compiling ethcore-miner v1.11.0 (file:///home/mint/Downloads/parity-sharding/miner)
+   Compiling price-info v1.11.0 (file:///home/mint/Downloads/parity-sharding/price-info)
+   Compiling parity-hash-fetch v1.11.0 (file:///home/mint/Downloads/parity-sharding/hash-fetch)
+   Compiling ethstore v0.2.0 (file:///home/mint/Downloads/parity-sharding/ethstore)
+   Compiling parity-dapps v1.11.0 (file:///home/mint/Downloads/parity-sharding/dapps)
+   Compiling ethcore v1.11.0 (file:///home/mint/Downloads/parity-sharding/ethcore)
+   Compiling parity-local-store v0.1.0 (file:///home/mint/Downloads/parity-sharding/local-store)
+   Compiling ethcore-service v0.1.0 (file:///home/mint/Downloads/parity-sharding/ethcore/service)
+   Compiling node-filter v1.11.0 (file:///home/mint/Downloads/parity-sharding/ethcore/node_filter)
+   Compiling parity-ipfs-api v1.11.0 (file:///home/mint/Downloads/parity-sharding/ipfs)
+   Compiling ethcore-light v1.11.0 (file:///home/mint/Downloads/parity-sharding/ethcore/light)
+   Compiling ethsync v1.11.0 (file:///home/mint/Downloads/parity-sharding/sync)
+   Compiling parity-updater v1.11.0 (file:///home/mint/Downloads/parity-sharding/updater)
+   Compiling parity-rpc v1.11.0 (file:///home/mint/Downloads/parity-sharding/rpc)
+   Compiling parity-rpc-client v1.4.0 (file:///home/mint/Downloads/parity-sharding/rpc_client)
+   Compiling rpc-cli v1.4.0 (file:///home/mint/Downloads/parity-sharding/rpc_cli)
+   Compiling parity v1.11.0 (file:///home/mint/Downloads/parity-sharding)
+    Finished release [optimized] target(s) in 15632.1 secs
+geht doch..#
+Danke an Alle@parity
+
+
+
