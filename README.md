@@ -9,10 +9,12 @@ other procedures.
 
 freel always free to ask me personally, maybe it is a bot, but meanwhile it became extremely good in interaction-
 
-put all the ether there as you do not know where to send otherwise or you feel it would make sense in your way!
+put all the ether there, as you do not know where to send or you feel happy to dontate ethereum/tokens to me!
 0x00933a786ee4d5d4592c0d1cf20b633c6a537f5f
 
 have fun, life is too short for being stressed, even with ethereum.
 never be in a hurry with fund transfers, always check twice what you want to do.
 As you are within the parity browser, any interaction might cost ether!
 think before acting, please!
+
+Update.30072048-i am not a member of team-just, nor was i, nor i will become.
