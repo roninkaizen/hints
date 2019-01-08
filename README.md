@@ -48,4 +48,4 @@ wie man es nicht machen sollte, da alle Ressourcen immer knappe Güter sind, als
 
 Allein die Umsetzung des namensorientierten Kontos (ja, das Ganze ist temporär und nicht finit und man muß den eigenen Namen erst ersteigern und dann auch noch zuordnen) und die Entscheidung auf besondere Ereignisse als Ganzes gemeinsam über die Zukunft unseres Systems (consensus) zu entscheiden, läßt mich diese Zeilen auch auf deutsch formulieren;
 
-nach vielen erfolglosen Versuchen, wirtschaftliche Verantwortung wenigen Anderen zu übertragen, sind wir durch ethereum an sich in der Lage angenehmeren Wege für die Zukunft zu gestalten. Ich finde die sollten wir nutzen.
+nach vielen erfolglosen Versuchen, wirtschaftliche Verantwortung wenigen Anderen zu übertragen, sind wir durch ethereum an sich in der Lage angenehmeren Wege für die Zukunft zu gestalten. Ich finde, die dürfen und sollen wir nutzen.
