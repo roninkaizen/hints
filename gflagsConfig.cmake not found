@@ -1,0 +1,580 @@
+while compiling parity on ubuntu you might have seen the 
+error used as headline
+
+can also be solved through installing the
+proper package from
+
+https://packages.ubuntu.com/search?suite=all&section=all&arch=any&keywords=gflags&searchon=names
+
+as tested any version above 2.2
+
+libgflags2.2_2.2.1-1_amd64.deb 
+after installing it matched with 13 nodes with ubuntu 16.04 still running,
+which means the error
+like this
+
+
+$ cargo build
+   Compiling semver-parser v0.7.0
+   Compiling version_check v0.1.5
+   Compiling rand_core v0.3.0
+   Compiling void v1.0.2
+   Compiling nodrop v0.1.12
+   Compiling proc-macro2 v0.4.20
+   Compiling stable_deref_trait v1.1.1
+   Compiling serde v1.0.80
+   Compiling crunchy v0.1.6
+   Compiling libc v0.2.43
+   Compiling heapsize v0.4.2 (https://github.com/cheme/heapsize.git?branch=ec-macfix#421df390)
+   Compiling cc v1.0.25
+   Compiling scopeguard v0.3.3
+   Compiling crossbeam-utils v0.5.0
+   Compiling memoffset v0.2.1
+   Compiling unicode-xid v0.1.0
+   Compiling byteorder v1.2.6
+   Compiling cfg-if v0.1.5
+   Compiling futures v0.1.25
+   Compiling rustc-hex v1.0.0
+   Compiling slab v0.4.1
+   Compiling ryu v0.2.6
+   Compiling lazycell v1.2.0
+   Compiling unicode-width v0.1.5
+   Compiling rustc-hex v2.0.1
+   Compiling untrusted v0.6.2
+   Compiling remove_dir_all v0.5.1
+   Compiling fnv v1.0.6
+   Compiling num-traits v0.2.6
+   Compiling itoa v0.4.3
+   Compiling gcc v0.3.55
+   Compiling httparse v1.3.3
+   Compiling safemem v0.3.0
+   Compiling ucd-util v0.1.1
+   Compiling num-integer v0.1.39
+   Compiling try-lock v0.2.2
+   Compiling indexmap v1.0.2
+   Compiling string v0.1.1
+   Compiling matches v0.1.8
+   Compiling regex v1.0.5
+   Compiling hashdb v0.3.0
+   Compiling parity-bytes v0.1.0
+   Compiling unicode-normalization v0.1.7
+   Compiling linked-hash-map v0.4.2
+   Compiling scoped-tls v0.1.2
+   Compiling either v1.5.0
+   Compiling hamming v0.1.3
+   Compiling utf8-ranges v1.0.1
+   Compiling rustc-serialize v0.3.24
+   Compiling protobuf v1.7.4
+   Compiling primal-estimate v0.2.1
+   Compiling regex v0.2.11
+   Compiling siphasher v0.2.3
+   Compiling rustc-demangle v0.1.9
+   Compiling bit-vec v0.4.4
+   Compiling quick-error v1.2.2
+   Compiling percent-encoding v1.0.1
+   Compiling num-iter v0.1.37
+   Compiling rayon-core v1.4.1
+   Compiling typenum v1.10.0
+   Compiling edit-distance v2.0.1
+   Compiling mem v0.1.0 (/home/jm/parity-ethereum-2.2.9/util/mem)
+   Compiling xdg v2.1.0
+   Compiling termcolor v1.0.4
+   Compiling crunchy v0.2.1
+   Compiling unicode-segmentation v1.2.1
+   Compiling ansi_term v0.10.2
+   Compiling home v0.3.3
+   Compiling nan-preserving-float v0.1.0
+   Compiling bitflags v1.0.4
+   Compiling try-lock v0.1.0
+   Compiling memory_units v0.3.0
+   Compiling unexpected v0.1.0 (/home/jm/parity-ethereum-2.2.9/util/unexpected)
+   Compiling rayon v1.0.2
+   Compiling interleaved-ordered v0.1.1
+   Compiling slab v0.3.0
+   Compiling bitflags v0.7.0
+   Compiling linked-hash-map v0.5.1
+   Compiling winapi v0.3.6
+   Compiling siphasher v0.1.3
+   Compiling language-tags v0.2.2
+   Compiling using_queue v0.1.0 (/home/jm/parity-ethereum-2.2.9/util/using_queue)
+   Compiling arrayref v0.3.5
+   Compiling failure_derive v0.1.3
+   Compiling stop-guard v0.1.0 (/home/jm/parity-ethereum-2.2.9/util/stop-guard)
+   Compiling macros v0.1.0 (/home/jm/parity-ethereum-2.2.9/util/macros)
+   Compiling byte-tools v0.2.0
+   Compiling ethabi-contract v6.0.0
+   Compiling ipnetwork v0.12.8
+   Compiling parity-path v0.1.1
+   Compiling fake-simd v0.1.2
+   Compiling mio-named-pipes v0.1.6
+   Compiling slab v0.2.0
+   Compiling if_chain v0.1.3
+   Compiling target_info v0.1.0
+   Compiling sha1 v0.5.0
+   Compiling sha1 v0.2.0
+   Compiling base-x v0.2.3
+   Compiling winapi-build v0.1.1
+   Compiling integer-encoding v1.0.5
+   Compiling transient-hashmap v0.4.1
+   Compiling order-stat v0.1.3
+   Compiling ethcore-devtools v1.12.0 (/home/jm/parity-ethereum-2.2.9/devtools)
+   Compiling rprompt v1.0.3
+   Compiling winapi v0.2.8
+   Compiling vec_map v0.8.1
+   Compiling bitflags v0.9.1
+   Compiling ansi_term v0.11.0
+   Compiling strsim v0.6.0
+   Compiling hex v0.2.0
+   Compiling strsim v0.7.0
+   Compiling unreachable v1.0.0
+   Compiling arrayvec v0.4.7
+   Compiling owning_ref v0.3.3
+   Compiling getopts v0.2.18
+   Compiling textwrap v0.10.0
+   Compiling textwrap v0.9.0
+   Compiling log v0.4.5
+   Compiling crossbeam-utils v0.2.2
+   Compiling crossbeam-utils v0.6.2
+   Compiling parity-wasm v0.31.3
+   Compiling fxhash v0.2.1
+   Compiling base64 v0.9.3
+   Compiling rand_core v0.2.2
+   Compiling iovec v0.1.2
+   Compiling net2 v0.2.33
+   Compiling rand v0.4.3
+   Compiling num_cpus v1.8.0
+   Compiling time v0.1.40
+   Compiling atty v0.2.11
+   Compiling memmap v0.6.2
+   Compiling fs-swap v0.2.4
+   Compiling socket2 v0.3.8
+   Compiling term_size v0.3.1
+   Compiling fdlimit v0.1.1
+   Compiling daemonize v0.3.0
+   Compiling semver v0.9.0
+   Compiling unicode-bidi v0.3.4
+   Compiling ring v0.13.2
+   Compiling cmake v0.1.35
+   Compiling backtrace-sys v0.1.24
+   Compiling eth-secp256k1 v0.5.7 (https://github.com/paritytech/rust-secp256k1#ccc06e74)
+   Compiling libusb-sys v0.2.4 (https://github.com/paritytech/libusb-sys#14bdb698)
+   Compiling hidapi v0.3.1 (https://github.com/paritytech/hidapi-rs#d4d32376)
+   Compiling lazy_static v1.1.0
+   Compiling memchr v2.1.0
+   Compiling unicase v1.4.2
+   Compiling unicase v2.2.0
+   Compiling rust-crypto v0.2.36
+   Compiling tokio-executor v0.1.5
+   Compiling tokio-service v0.1.0
+   Compiling relay v0.1.1
+   Compiling lru-cache v0.1.1
+   Compiling itertools v0.5.10
+   Compiling itertools v0.7.8
+   Compiling primal-bit v0.2.4
+   Compiling regex-syntax v0.6.2
+   Compiling regex-syntax v0.5.6
+   Compiling humantime v1.1.1
+   Compiling bit-set v0.4.0
+   Compiling xml-rs v0.7.0
+   Compiling app_dirs v1.2.1 (https://github.com/paritytech/app-dirs-rs#0b37f948)
+   Compiling heck v0.3.0
+   Compiling tokio-timer v0.1.2
+   Compiling ethcore-bloom-journal v0.1.0 (/home/jm/parity-ethereum-2.2.9/util/bloom)
+   Compiling block-buffer v0.3.3
+   Compiling multibase v0.6.0
+   Compiling kernel32-sys v0.2.2
+   Compiling smallvec v0.6.5
+   Compiling lock_api v0.1.4
+   Compiling rpassword v1.0.2
+   Compiling toolshed v0.4.0
+   Compiling rand v0.5.5
+   Compiling pulldown-cmark v0.0.3
+   Compiling bytes v0.4.10
+   Compiling log v0.3.9
+   Compiling want v0.0.6
+   Compiling trace-time v0.1.1
+   Compiling want v0.0.4
+   Compiling stats v0.1.0 (/home/jm/parity-ethereum-2.2.9/util/stats)
+   Compiling futures-cpupool v0.1.8
+   Compiling clap v2.32.0
+   Compiling mio v0.6.16
+   Compiling vergen v0.1.1
+   Compiling tempdir v0.3.7
+   Compiling rand v0.3.22
+   Compiling rustc_version v0.2.3
+   Compiling pwasm-utils v0.6.1
+   Compiling wasmi v0.3.0
+   Compiling parity-snappy-sys v0.1.1
+   Compiling parity-rocksdb-sys v0.5.3
+   Compiling tokio-current-thread v0.1.3
+   Compiling tokio-timer v0.2.7
+   Compiling xmltree v0.7.0
+   Compiling primal-sieve v0.2.9
+   Compiling lunarity-lexer v0.1.0
+   Compiling tokio-io v0.1.9
+   Compiling http v0.1.13
+   Compiling mio-uds v0.6.7
+   Compiling tiny-keccak v1.4.2
+   Compiling plain_hasher v0.2.0
+   Compiling fixed-hash v0.2.2
+   Compiling uint v0.4.1
+   Compiling elastic-array v0.10.0
+   Compiling memory-cache v0.1.0 (/home/jm/parity-ethereum-2.2.9/util/memory_cache)
+   Compiling quote v0.6.8
+   Compiling parking_lot_core v0.3.1
+   Compiling num-traits v0.1.43
+   Compiling number_prefix v0.2.8
+   Compiling bn v0.4.4 (https://github.com/paritytech/bn#2a71dbde)
+   Compiling miow v0.3.3
+   Compiling generic-array v0.9.0
+   Compiling skeptic v0.4.0
+   Compiling crossbeam-epoch v0.5.2
+   Compiling thread_local v0.3.6
+   Compiling crossbeam-epoch v0.3.1
+   Compiling parity-wordlist v1.2.1
+   Compiling crossbeam-epoch v0.6.1
+   Compiling phf_shared v0.7.23
+   Compiling ethereum-types-serialize v0.2.1
+   Compiling serde_json v1.0.32
+   Compiling toml v0.4.8
+   Compiling tokio-codec v0.1.1
+   Compiling patricia-trie v0.3.0
+   Compiling kvdb v0.1.0
+   Compiling idna v0.1.5
+   Compiling ctrlc v1.1.1 (https://github.com/paritytech/rust-ctrlc.git#b5230171)
+   Compiling mime v0.3.12
+   Compiling bincode v0.8.0
+   Compiling ordered-float v0.5.2
+   Compiling syn v0.15.11
+   Compiling primal-check v0.2.3
+   Compiling chrono v0.4.6
+   Compiling num-bigint v0.1.44
+   Compiling aho-corasick v0.6.8
+   Compiling backtrace v0.3.9
+   Compiling digest v0.7.6
+   Compiling libusb v0.3.0 (https://github.com/paritytech/libusb-rs#44270895)
+   Compiling phf_generator v0.7.23
+   Compiling phf v0.7.23
+   Compiling h2 v0.1.12
+   Compiling crossbeam-deque v0.6.1
+   Compiling crossbeam-deque v0.5.2
+   Compiling crossbeam-deque v0.2.0
+   Compiling ethbloom v0.5.0
+   Compiling local-encoding v0.2.0
+   Compiling sha2 v0.7.1
+   Compiling parity-version v2.2.9 (/home/jm/parity-ethereum-2.2.9/util/version)
+   Compiling phf_codegen v0.7.23
+   Compiling timer v0.2.0
+   Compiling primal v0.2.3
+   Compiling num v0.1.42
+   Compiling error-chain v0.12.0
+   Compiling panic_hook v0.1.0 (/home/jm/parity-ethereum-2.2.9/util/panic_hook)
+   Compiling tokio-threadpool v0.1.7
+   Compiling mime_guess v2.0.0-alpha.6
+   Compiling parking_lot v0.6.4
+   Compiling ethereum-types v0.4.0
+   Compiling url v1.7.1
+   Compiling transaction-pool v1.13.3
+   Compiling multihash v0.8.0
+   Compiling sct v0.4.0
+   Compiling webpki v0.18.1
+   Compiling parity-crypto v0.2.0
+   Compiling trezor-sys v1.0.0 (https://github.com/paritytech/trezor-sys#8a401705)
+   Compiling tokio-reactor v0.1.6
+   Compiling crossbeam-channel v0.2.6
+   Compiling kvdb-memorydb v0.1.0
+   Compiling blooms-db v0.1.0 (/home/jm/parity-ethereum-2.2.9/util/blooms-db)
+   Compiling ethcore-io v1.12.0 (/home/jm/parity-ethereum-2.2.9/util/io)
+   Compiling tokio-fs v0.1.3
+   Compiling serde_derive v1.0.80
+   Compiling rlp_derive v0.1.0 (/home/jm/parity-ethereum-2.2.9/util/rlp_derive)
+   Compiling synstructure v0.10.1
+   Compiling ct-logs v0.4.0
+   Compiling tokio-udp v0.1.2
+   Compiling tokio-tcp v0.1.2
+   Compiling tokio-uds v0.2.2
+   Compiling rustls v0.13.1
+   Compiling webpki-roots v0.15.0
+   Compiling cid v0.3.0
+   Compiling ws v0.7.5 (https://github.com/tomusdrw/ws-rs#f12d19c4)
+   Compiling crossbeam v0.4.1
+   Compiling globset v0.4.2
+   Compiling env_logger v0.5.13
+   Compiling tokio v0.1.11
+   Compiling ethcore-logger v1.12.0 (/home/jm/parity-ethereum-2.2.9/logger)
+   Compiling failure v0.1.3
+   Compiling hyper v0.12.11
+   Compiling tokio-core v0.1.17
+   Compiling parity-runtime v0.1.0 (/home/jm/parity-ethereum-2.2.9/util/runtime)
+   Compiling tokio-named-pipes v0.1.0
+   Compiling parity-tokio-ipc v0.1.0
+   Compiling rlp v0.3.0
+   Compiling keccak-hash v0.1.2
+   Compiling keccak-hasher v0.1.1 (/home/jm/parity-ethereum-2.2.9/util/keccak-hasher)
+   Compiling fastmap v0.1.0 (/home/jm/parity-ethereum-2.2.9/util/fastmap)
+   Compiling parity-machine v0.1.0 (/home/jm/parity-ethereum-2.2.9/machine)
+   Compiling tokio-rustls v0.7.2
+   Compiling hyper v0.11.27
+   Compiling tokio-retry v0.1.1
+   Compiling ethash v1.12.0 (/home/jm/parity-ethereum-2.2.9/ethash)
+   Compiling patricia-trie-ethereum v0.1.0 (/home/jm/parity-ethereum-2.2.9/util/patricia-trie-ethereum)
+   Compiling memorydb v0.3.0
+   Compiling triehash v0.3.0
+   Compiling rlp_compress v0.1.0 (/home/jm/parity-ethereum-2.2.9/util/rlp_compress)
+   Compiling journaldb v0.2.0 (/home/jm/parity-ethereum-2.2.9/util/journaldb)
+   Compiling triehash-ethereum v0.2.0 (/home/jm/parity-ethereum-2.2.9/util/triehash-ethereum)
+   Compiling hyper-rustls v0.14.0
+   Compiling fetch v0.1.0 (/home/jm/parity-ethereum-2.2.9/util/fetch)
+   Compiling dir v0.1.2 (/home/jm/parity-ethereum-2.2.9/util/dir)
+   Compiling ethjson v0.1.0 (/home/jm/parity-ethereum-2.2.9/json)
+   Compiling jsonrpc-core v9.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-2.2#f8a54f46)
+   Compiling ethkey v0.3.0 (/home/jm/parity-ethereum-2.2.9/ethkey)
+   Compiling ethabi v6.1.0
+   Compiling validator v0.8.0
+   Compiling docopt v0.8.3
+   Compiling ethabi-derive v6.0.2
+   Compiling validator_derive v0.8.0
+   Compiling igd v0.7.0
+   Compiling jsonrpc-server-utils v9.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-2.2#f8a54f46)
+   Compiling jsonrpc-pubsub v9.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-2.2#f8a54f46)
+   Compiling parity-snappy v0.1.0
+   Compiling jsonrpc-macros v9.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-2.2#f8a54f46)
+   Compiling jsonrpc-tcp-server v9.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-2.2#f8a54f46)
+   Compiling jsonrpc-http-server v9.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-2.2#f8a54f46)
+   Compiling jsonrpc-ws-server v9.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-2.2#f8a54f46)
+   Compiling jsonrpc-ipc-server v9.0.0 (https://github.com/paritytech/jsonrpc.git?branch=parity-2.2#f8a54f46)
+   Compiling hardware-wallet v1.12.0 (/home/jm/parity-ethereum-2.2.9/hw)
+   Compiling ethstore v0.2.0 (/home/jm/parity-ethereum-2.2.9/ethstore)
+   Compiling ethcore-network v1.12.0 (/home/jm/parity-ethereum-2.2.9/util/network)
+   Compiling ethcore-stratum v1.12.0 (/home/jm/parity-ethereum-2.2.9/ethcore/stratum)
+   Compiling eip712 v0.1.0 (/home/jm/parity-ethereum-2.2.9/util/EIP-712)
+   Compiling ethcore-network-devp2p v1.12.0 (/home/jm/parity-ethereum-2.2.9/util/network-devp2p)
+   Compiling parity-whisper v0.1.0 (/home/jm/parity-ethereum-2.2.9/whisper)
+warning: unused `#[macro_use]` import
+   --> util/EIP-712/src/lib.rs:174:1
+    |
+174 | #[macro_use]
+    | ^^^^^^^^^^^^
+    |
+    = note: #[warn(unused_imports)] on by default
+
+   Compiling registrar v0.0.1 (/home/jm/parity-ethereum-2.2.9/registrar)
+   Compiling common-types v0.1.0 (/home/jm/parity-ethereum-2.2.9/ethcore/types)
+   Compiling price-info v1.12.0 (/home/jm/parity-ethereum-2.2.9/price-info)
+   Compiling parity-hash-fetch v1.12.0 (/home/jm/parity-ethereum-2.2.9/hash-fetch)
+   Compiling vm v0.1.0 (/home/jm/parity-ethereum-2.2.9/ethcore/vm)
+   Compiling evm v0.1.0 (/home/jm/parity-ethereum-2.2.9/ethcore/evm)
+   Compiling wasm v0.1.0 (/home/jm/parity-ethereum-2.2.9/ethcore/wasm)
+   Compiling ethcore-transaction v0.1.0 (/home/jm/parity-ethereum-2.2.9/ethcore/transaction)
+   Compiling ethcore-miner v1.12.0 (/home/jm/parity-ethereum-2.2.9/miner)
+error: failed to run custom build command for `parity-rocksdb-sys v0.5.3`
+process didn't exit successfully: `/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-90d3c93f6aa35706/build-script-build` (exit code: 101)
+--- stdout
+running: "cmake" "/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb" "-DCMAKE_VERBOSE_MAKEFILE=ON" "-DWITH_SNAPPY=ON" "-DFAIL_ON_WARNINGS=OFF" "-DSNAPPY_INCLUDE_DIR=/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build" "-DSNAPPY_LIBRARIES=/dev/null" "-DPORTABLE=ON" "-DCMAKE_INSTALL_PREFIX=/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out" "-DCMAKE_C_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_C_COMPILER=/usr/bin/cc" "-DCMAKE_CXX_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_CXX_COMPILER=/usr/bin/c++" "-DCMAKE_BUILD_TYPE=Debug"
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/cc
+-- Found snappy: /dev/null
+-- Found Git: /usr/bin/git (found version "2.7.4")
+-- Enabling RTTI in Debug builds only (default)
+-- Looking for malloc_usable_size
+-- Looking for malloc_usable_size - found
+-- Looking for sched_getcpu
+-- Looking for sched_getcpu - found
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE
+-- JNI library is disabled
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build
+running: "cmake" "--build" "." "--target" "rocksdb" "--config" "Debug" "--"
+/usr/bin/cmake -H/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -B/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/make -f CMakeFiles/Makefile2 rocksdb
+make[1]: Entering directory '/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build'
+/usr/bin/cmake -H/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -B/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build/CMakeFiles 29
+/usr/bin/make -f CMakeFiles/Makefile2 CMakeFiles/rocksdb.dir/all
+make[2]: Entering directory '/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build'
+/usr/bin/make -f CMakeFiles/build_version.dir/build.make CMakeFiles/build_version.dir/depend
+make[3]: Entering directory '/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build'
+cd /home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb /home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build /home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build /home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build/CMakeFiles/build_version.dir/DependInfo.cmake --color=
+Scanning dependencies of target build_version
+make[3]: Leaving directory '/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build'
+/usr/bin/make -f CMakeFiles/build_version.dir/build.make CMakeFiles/build_version.dir/build
+make[3]: Entering directory '/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build'
+[  0%] Building CXX object CMakeFiles/build_version.dir/build_version.cc.o
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/util -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/build_version.dir/build_version.cc.o -c /home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build/build_version.cc
+make[3]: Leaving directory '/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build'
+[  0%] Built target build_version
+/usr/bin/make -f CMakeFiles/rocksdb.dir/build.make CMakeFiles/rocksdb.dir/depend
+make[3]: Entering directory '/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build'
+cd /home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb /home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build /home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build /home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build/CMakeFiles/rocksdb.dir/DependInfo.cmake --color=
+Scanning dependencies of target rocksdb
+make[3]: Leaving directory '/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build'
+/usr/bin/make -f CMakeFiles/rocksdb.dir/build.make CMakeFiles/rocksdb.dir/build
+make[3]: Entering directory '/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build'
+[  3%] Building CXX object CMakeFiles/rocksdb.dir/db/compacted_db_impl.cc.o
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/compacted_db_impl.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/compacted_db_impl.cc
+[  3%] Building CXX object CMakeFiles/rocksdb.dir/db/compaction_iterator.cc.o
+[  3%] Building CXX object CMakeFiles/rocksdb.dir/db/compaction_picker.cc.o
+[  3%] Building CXX object CMakeFiles/rocksdb.dir/db/db_filesnapshot.cc.o
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/compaction_picker.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/compaction_picker.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/compaction_iterator.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/compaction_iterator.cc
+[  3%] Building CXX object CMakeFiles/rocksdb.dir/db/compaction_job.cc.o
+[  6%] Building CXX object CMakeFiles/rocksdb.dir/db/db_impl.cc.o
+[  6%] Building CXX object CMakeFiles/rocksdb.dir/cache/lru_cache.cc.o
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/cache/lru_cache.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/cache/lru_cache.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/compaction_job.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/compaction_job.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/db_filesnapshot.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/db_filesnapshot.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/db_impl.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/db_impl.cc
+[  6%] Building CXX object CMakeFiles/rocksdb.dir/db/dbformat.cc.o
+[  6%] Building CXX object CMakeFiles/rocksdb.dir/db/external_sst_file_ingestion_job.cc.o
+[  6%] Building CXX object CMakeFiles/rocksdb.dir/db/builder.cc.o
+[  6%] Building CXX object CMakeFiles/rocksdb.dir/cache/clock_cache.cc.o
+[  6%] Building CXX object CMakeFiles/rocksdb.dir/db/column_family.cc.o
+[  6%] Building CXX object CMakeFiles/rocksdb.dir/db/file_indexer.cc.o
+[  6%] Building CXX object CMakeFiles/rocksdb.dir/cache/sharded_cache.cc.o
+[  6%] Building CXX object CMakeFiles/rocksdb.dir/db/convenience.cc.o
+[  6%] Building CXX object CMakeFiles/rocksdb.dir/db/db_iter.cc.o
+[  6%] Building CXX object CMakeFiles/rocksdb.dir/db/db_impl_write.cc.o
+[  6%] Building CXX object CMakeFiles/rocksdb.dir/db/db_impl_compaction_flush.cc.o
+[ 10%] Building CXX object CMakeFiles/rocksdb.dir/db/flush_job.cc.o
+[ 10%] Building CXX object CMakeFiles/rocksdb.dir/db/compaction.cc.o
+[ 10%] Building CXX object CMakeFiles/rocksdb.dir/db/db_impl_debug.cc.o
+[ 10%] Building CXX object CMakeFiles/rocksdb.dir/db/c.cc.o
+[ 10%] Building CXX object CMakeFiles/rocksdb.dir/db/db_info_dumper.cc.o
+[ 10%] Building CXX object CMakeFiles/rocksdb.dir/db/event_helpers.cc.o
+[ 10%] Building CXX object CMakeFiles/rocksdb.dir/db/experimental.cc.o
+[ 13%] Building CXX object CMakeFiles/rocksdb.dir/db/db_impl_readonly.cc.o
+[ 13%] Building CXX object CMakeFiles/rocksdb.dir/db/db_impl_open.cc.o
+[ 13%] Building CXX object CMakeFiles/rocksdb.dir/db/db_impl_experimental.cc.o
+[ 13%] Building CXX object CMakeFiles/rocksdb.dir/db/compaction_picker_universal.cc.o
+[ 13%] Building CXX object CMakeFiles/rocksdb.dir/db/db_impl_files.cc.o
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/cache/clock_cache.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/cache/clock_cache.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/cache/sharded_cache.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/cache/sharded_cache.cc
+[ 13%] Building CXX object CMakeFiles/rocksdb.dir/db/flush_scheduler.cc.o
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/builder.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/builder.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/c.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/c.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/column_family.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/column_family.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/compaction.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/compaction.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/compaction_picker_universal.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/compaction_picker_universal.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/convenience.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/convenience.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/db_impl_write.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/db_impl_write.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/db_impl_compaction_flush.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/db_impl_compaction_flush.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/db_impl_files.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/db_impl_files.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/db_impl_open.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/db_impl_open.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/db_impl_debug.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/db_impl_debug.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/db_impl_experimental.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/db_impl_experimental.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/db_impl_readonly.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/db_impl_readonly.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/db_info_dumper.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/db_info_dumper.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/db_iter.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/db_iter.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/dbformat.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/dbformat.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/event_helpers.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/event_helpers.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/experimental.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/experimental.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/external_sst_file_ingestion_job.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/external_sst_file_ingestion_job.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/file_indexer.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/file_indexer.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/flush_job.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/flush_job.cc
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/flush_scheduler.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/flush_scheduler.cc
+[ 13%] Building CXX object CMakeFiles/rocksdb.dir/db/internal_stats.cc.o
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/internal_stats.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/internal_stats.cc
+[ 13%] Building CXX object CMakeFiles/rocksdb.dir/db/logs_with_prep_tracker.cc.o
+/usr/bin/c++   -DOS_LINUX -DROCKSDB_LIB_IO_POSIX -DROCKSDB_MALLOC_USABLE_SIZE -DROCKSDB_PLATFORM_POSIX -DROCKSDB_SCHED_GETCPU_PRESENT -DSNAPPY -I/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-snappy-sys-11480f0ce5cf862e/out/build -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb -I/home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/include -isystem /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/third-party/gtest-1.7.0/fused-src  -ffunction-sections -fdata-sections -fPIC -m64 -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -std=c++11 -fno-builtin-memcmp -g -DROCKSDB_USE_RTTI   -o CMakeFiles/rocksdb.dir/db/logs_with_prep_tracker.cc.o -c /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-rocksdb-sys-0.5.3/rocksdb/db/logs_with_prep_tracker.cc
+CMakeFiles/rocksdb.dir/build.make:569: recipe for target 'CMakeFiles/rocksdb.dir/db/db_impl_readonly.cc.o' failed
+CMakeFiles/rocksdb.dir/build.make:809: recipe for target 'CMakeFiles/rocksdb.dir/db/forward_iterator.cc.o' failed
+CMakeFiles/rocksdb.dir/build.make:401: recipe for target 'CMakeFiles/rocksdb.dir/db/db_impl.cc.o' failed
+CMakeFiles/rocksdb.dir/build.make:881: recipe for target 'CMakeFiles/rocksdb.dir/db/log_reader.cc.o' failed
+CMakeFiles/rocksdb.dir/build.make:449: recipe for target 'CMakeFiles/rocksdb.dir/db/db_impl_compaction_flush.cc.o' failed
+CMakeFiles/rocksdb.dir/build.make:425: recipe for target 'CMakeFiles/rocksdb.dir/db/db_impl_write.cc.o' failed
+CMakeFiles/rocksdb.dir/build.make:833: recipe for target 'CMakeFiles/rocksdb.dir/db/internal_stats.cc.o' failed
+CMakeFiles/rocksdb.dir/build.make:473: recipe for target 'CMakeFiles/rocksdb.dir/db/db_impl_files.cc.o' failed
+make[3]: Leaving directory '/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build'
+CMakeFiles/Makefile2:2668: recipe for target 'CMakeFiles/rocksdb.dir/all' failed
+make[2]: Leaving directory '/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build'
+CMakeFiles/Makefile2:2680: recipe for target 'CMakeFiles/rocksdb.dir/rule' failed
+make[1]: Leaving directory '/home/jm/parity-ethereum-2.2.9/target/debug/build/parity-rocksdb-sys-2e328d7e40b4a6b7/out/build'
+Makefile:1021: recipe for target 'rocksdb' failed
+
+--- stderr
+CMake Warning at CMakeLists.txt:74 (find_package):
+  By not providing "Findgflags.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "gflags", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "gflags" with any
+  of the following names:
+
+    gflagsConfig.cmake
+    gflags-config.cmake
+
+  Add the installation prefix of "gflags" to CMAKE_PREFIX_PATH or set
+  "gflags_DIR" to a directory containing one of the above files.  If "gflags"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+
+sh: ../sysdeps/nptl/fork.c:156: __libc_fork: Assertion `THREAD_GETMEM (self, tid) != ppid' failed.
+c++: error trying to exec '/usr/lib/gcc/x86_64-linux-gnu/5/cc1plus': execv: Argument list too long
+sh: ../sysdeps/nptl/fork.c:156: __libc_fork: Assertion `THREAD_GETMEM (self, tid) != ppid' failed.
+make[3]: *** [CMakeFiles/rocksdb.dir/db/db_impl_readonly.cc.o] Error 1
+make[3]: *** Waiting for unfinished jobs....
+make[3]: *** [CMakeFiles/rocksdb.dir/db/forward_iterator.cc.o] Aborted
+c++: internal compiler error: Killed (program cc1plus)
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <file:///usr/share/doc/gcc-5/README.Bugs> for instructions.
+make[3]: *** [CMakeFiles/rocksdb.dir/db/db_impl.cc.o] Error 4
+make[3]: *** [CMakeFiles/rocksdb.dir/db/log_reader.cc.o] Aborted
+c++: internal compiler error: Killed (program cc1plus)
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <file:///usr/share/doc/gcc-5/README.Bugs> for instructions.
+make[3]: *** [CMakeFiles/rocksdb.dir/db/db_impl_compaction_flush.cc.o] Error 4
+c++: internal compiler error: Killed (program cc1plus)
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <file:///usr/share/doc/gcc-5/README.Bugs> for instructions.
+make[3]: *** [CMakeFiles/rocksdb.dir/db/db_impl_write.cc.o] Error 4
+c++: internal compiler error: Killed (program cc1plus)
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <file:///usr/share/doc/gcc-5/README.Bugs> for instructions.
+make[3]: *** [CMakeFiles/rocksdb.dir/db/internal_stats.cc.o] Error 4
+c++: internal compiler error: Killed (program cc1plus)
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <file:///usr/share/doc/gcc-5/README.Bugs> for instructions.
+make[3]: *** [CMakeFiles/rocksdb.dir/db/db_impl_files.cc.o] Error 4
+make[2]: *** [CMakeFiles/rocksdb.dir/all] Error 2
+make[1]: *** [CMakeFiles/rocksdb.dir/rule] Error 2
+make: *** [rocksdb] Error 2
+thread 'main' panicked at '
+command did not execute successfully, got: exit code: 2
+
+build script failed, must exit now', /home/jm/.cargo/registry/src/github.com-1ecc6299db9ec823/cmake-0.1.35/src/lib.rs:778:5
+note: Run with `RUST_BACKTRACE=1` for a backtrace.
+
+warning: build failed, waiting for other jobs to finish...
+error: build failed
+
+
+does not appear any further and the builds are successful.
