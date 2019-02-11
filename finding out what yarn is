@@ -1,0 +1,13 @@
+searching this detail
+because i need it to compile parity fether on my raspi-farm
+
+very helpful is the site of their project
+https://yarnpkg.com/en/docs/install#alternatives-stable
+
+as you did not know what it is, and what it does-
+following their introduction i was able to run it 
+finally the difference brought
+sudo npm install --global yarn
+
+which braught the 1.13 versionfinally onto my raspi
+
