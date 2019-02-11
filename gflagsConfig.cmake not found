@@ -1,8 +1,24 @@
 while compiling parity on ubuntu you might have seen the 
 error used as headline
 
-can also be solved through installing the
-proper package from
+--- stderr
+CMake Warning at CMakeLists.txt:74 (find_package):
+  By not providing "Findgflags.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "gflags", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "gflags" with any
+  of the following names:
+
+    gflagsConfig.cmake
+    gflags-config.cmake
+
+  Add the installation prefix of "gflags" to CMAKE_PREFIX_PATH or set
+  "gflags_DIR" to a directory containing one of the above files.  If "gflags"
+  provides a separate development package or SDK, be sure it has been
+installed.
+
+can also be solved through installing the proper package from
 
 https://packages.ubuntu.com/search?suite=all&section=all&arch=any&keywords=gflags&searchon=names
 
