@@ -17,7 +17,7 @@ never be in a hurry with fund transfers, always check twice what you want to do.
 As you are within the parity browser, any interaction might cost ether!
 think before acting, please!
 
-Update.30072048-i am not a member of team-just, nor was i, nor i will become ever.
+Update.30072018-i am not a member of team-just, nor was i, nor i will become ever.
 
 german:
 Hinweise
