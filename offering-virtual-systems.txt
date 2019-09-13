@@ -1,0 +1,18 @@
+as any of my students is too lazy to create his own "ethereum-workspace" we decided last month just to provide one:
+
+based on ubuntu 18.04- 
+within this certain qemu-image my students will find a well configured multi-node-base-layer node.
+
+it contains
+- geth, including a working go-lang- installation, to avoid any trouble i guess we also will use exact this image during our common-dev-studies
+- parity, including the default "ready-2-compile" environment for building-environment, our rust-interested students also can work on that during our "common-lessons"
+- nethermind, the new and very reliable ethereum client, based on dot.net, we will see if there are students who like to code on that, the dev-env is about to prepared
+- pantheon, the java-based ethereum-client, also capeable to run goerli and mainnet, only needs having jre-headless installed to run
+- standard linux-tools we will need during our trainings and matching the needs of any student
+- an english-based and not localized ubuntu "with everything done" to- develop or to test around with goerli and mainnet after intense preparation
+
+with providing this image i tend to offer the possibility to concentrate on dev-stuff, where ops-stuff is done or prepared by other teams of the org.
+
+on kind request, the link is being provided to download and run.
+
+yours ronin-kaizen
