@@ -21,22 +21,27 @@ Update.30072018-i am not a member of team-just, nor was i, nor i will become eve
 
 german:
 Hinweise
-Tips & Tricks fast für die interessant, 
-die mit Build-Systemen in Konstellation mit Operating Umfeld mit parity-ethereum auf Linux Basis arbeitet.
-Darin ich Erfahrungen sammeln dürfen- mehr als 4000 Stunden; ja auch als einer der mehr als 3 Wochen jedes einzelne Crate kompiliert hat, um auf einem Raspberry-pi-2 eine node zu betreiben.
+Tips & Tricks fast für diejenigen interessant, 
+die mit Build-Systemen in Konstellation mit Operating-Umfeld mit parity-ethereum auf Linux Basis arbeitet.
+
+Darin ich Erfahrungen sammeln dürfen- mehr als 7500 Stunden; als einer, der mehr als 3 Wochen jedes einzelne Crate kompiliert hat, um auf einem Raspberry-pi-2 eine node zu betreiben. Ging aber auch nur Wochen gut, hat sich dennoch gelohnt, seitdem habe ich eine sehr gute Idee, warum parity auf rust setzt und wie man damit kompiliert.
 
 Da ich dieses Wissen als hilfreich empfinde, gebe ich es heraus;
-nicht um mich zu profilieren, sondern um den Eingang für viele leichter und angenehmer zu gestalten.
+nicht um mich zu profilieren, sondern um den Eingang für Viele leichter und angenehmer zu gestalten.
 Mir ist an einer deutlichen Stabilisierung der Ethereum Netzwerke gelegen.
 
-Wer Hilfe braucht, kann immer gerne persönlich fragen, manchmal könnte ein bot auf Fragen antworten, 
-wenn ich diesen auf ein genügend hohes Antwort/Verständnisniveau bringen konnte.
+Wer Hilfe braucht, kann immer gerne persönlich fragen (Antwort dauert nie wirklich lange-gitter ist der einzige Kanal dafür), 
+wenn ich im Bereich der Frage  ein genügend hohes Verständnisniveau habe. Es waren zwei harte Jahre bis ich das meiste verstanden hatte, keine einzige Dapp und auch keine einzige Zeile Code habe ich entwickeln können,
+mir ging es vorerst immer um die Beweglichkeit meiner Ether.
 
 Wenn man mich für meine Hinweise und Verbesserungsvorschläge belohnen möchte, 
 hier meine wallet-Adresse 0x00933a786ee4d5d4592c0d1cf20b633c6a537f5f.
 
-Wenn es nicht funktioniert; lerne entweder es zu meistern oder lasse die Finger davon.
-Betrug, Diebstahl oder andere Ekelhaftigkeiten widern mich an.
+Wenn etwas nicht funktioniert; lerne entweder es zu meistern oder lasse die Finger davon.
+Betrug, Diebstahl oder andere Abartigen widern mich an.
+Jeder ist seines Schicksals Schmied- 
+ich habe Menschen gern, die das verstehen und umsetzen, diese mag ich nach Kräften unterstützen,
+meine Motivation, das zu tun, was ich mache, liegt bei mir und bedarf keiner genaueren Erklärung.
 
 Wir haben den klassischen Vertrauenssystemen sehr, sehr lange und leider sehr erfolglos dabei zuschauen müssen,
 wie man es nicht machen sollte; 
@@ -50,3 +55,15 @@ Allein die Umsetzung des namensorientierten Kontos (e.g. bimbambum.eth) und die 
 Nach vielen erfolglosen Versuchen, gestalterische politische wie wirtschaftliche Verantwortung wenigen Anderen zu übertragen, sind wir auch durch ethereum an sich in der Lage, bessere und nachvollziehbare Wege für die Zukunft zu gestalten. 
 
 Chancen zu nutzen ist viel besser als über Einschränkungen zu jammern.
+Dass ich hier keine Zeile Code "droppe" ist der Tatsache geschuldet, daß viel zu wenige Menschen sich 
+um die infrastrukturellen Fragen der ethereum-Netzwerke kümmern;
+ich danke ausdrücklich und vielmals besonders dem "Kollegen" soc1c dafür, daß er einen Weg gefunden hat,
+mit der besonderen Community-Situation auch bei Bedrohung des eigenen Lebens umzugehen-
+wer irgendwie mit Suchmaschinen umgehen kann, weiß sehr schnell, wie ich heiße, erreichbar bin und wohne-
+keine Frage- recht einfach; wozu frage ich? Spam, Diffamierung, Beleidigung und Bedrohung gehen mir gerade mal auf die Nerven,
+und wer unbedingt Aufmerksamkeit braucht, dem wird sie dann auch zuteil- vielleicht nicht unbedingt in intendierter Form!
+
+Meine Studenten kommen aus viel einfacheren Verhältnissen und Sie wissen genau, 
+wer Ihnen ohne Hintergedanken gerne und regelmäßig hilft, aushilft und sie (wenn erforderlich) kostenfrei ausbildet; 
+dem sind sie verbunden, das macht mein Leben und auch meine Verantwortung aus;
+dafür stehe ich in der echten Welt ein.
