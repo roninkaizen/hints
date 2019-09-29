@@ -1,0 +1,12 @@
+yes,
+
+hereby i state my actual participation at the dothereum alpha network.
+
+at this moment 5 active nodes are working within that network,
+apart from my participation with the goerli-network:
+with 2 parity nodes, one working as validator,
+3 nethermind-nodes and
+also with 2 besu-nodes the successing software to pantheon.
+
+regards ronin-kaizen, 
+the infrastruture "dude"
