@@ -67,3 +67,11 @@ Meine Studenten kommen aus viel einfacheren Verhältnissen und Sie wissen genau,
 wer Ihnen ohne Hintergedanken gerne und regelmäßig hilft, aushilft und sie (wenn erforderlich) kostenfrei ausbildet; 
 dem sind sie verbunden, das macht mein Leben und auch meine Verantwortung aus;
 dafür stehe ich in der echten Welt ein.
+
+Mit einer abnehmenden Tendenz an ethereum full nodes Main-net mache ich mir zunehmend Sorgen;
+wem das auch so geht- gitter, Freunde !
+@
+
+with the long-term trend of less full ethereum node on main-net 
+i feel little sorrowed about the stability of the 
+actual as future network performance, feel free to contact on gitter, pals.
