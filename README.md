@@ -75,3 +75,7 @@ wem das auch so geht- gitter, Freunde !
 with the long-term trend of less full ethereum node on main-net 
 i feel little sorrowed about the stability of the 
 actual as future network performance, feel free to contact on gitter, pals.
+
+actually i am getting myself into eth2 tests with the schlesi testnet
+https://schlesi.beaconcha.in/ and
+into the world of sales integration
