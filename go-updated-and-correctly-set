@@ -1,0 +1,8 @@
+curl -O https://storage.googleapis.com/golang/go1.16.3.linux-amd64.tar.gz
+tar -xvf go1.16.3.linux-amd64.tar.gz
+sudo mv go /usr/local
+mkdir -p $HOME/goprojects
+echo "export GOROOT=/usr/local/go" >> ~/.bashrc
+echo "export GOPATH=$HOME/goprojects" >> ~/.bashrc
+echo "export PATH=$PATH:$GOROOT/bin:$GOPATH/bin" >> ~/.bashrc
+source ~/.bashrc
