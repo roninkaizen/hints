@@ -2,9 +2,11 @@ name:roninkaizen
 interest:ethereum
 detailled interested: providing infrastructural tests and operational knowledge about nodes and their "behaviour"
 experience: 6000 hours with parity-ethereum (former parity)
+experienceIb: 5000 hours with OpenEthereum (former parity-ethereum)
 experienceII: 4500 hours with geth (go-ethereum)
-experienceIII: 1000 hours with nethermind (nethermind.io, since march 2019)
+experienceIII: 4000 hours with nethermind (nethermind.io, since march 2019)
 experienceIV: 600 hours with pantheon (http://pegasys.tech)
+experienceV: 200 hours with besu (http://pegasys.tech)
 
 i am experienced with ethereum and for sure, i am interested in "ít`s" future.
 
@@ -13,14 +15,14 @@ got also into the "docker world" in may 2019,
 being also active participant in the goerli-testnet.
 
 willing to work on infrastructural planning and implementing solid, reliable structres
-to enable system-based contract engines.
+to enable evm-based contract engines.
 
 experienced in training other people in "what i do"- as well,
 
 whereas i deeply respect infura and other services providing rpc-endpoints for devs and users,
 as well as i like and agree on the ideas of metamask, as well as https://mycrypto.com and others.
 
-apart from that also user of the ENS-system and willing to learn even more about that.
+apart from that also i am also user of the ENS-system and willing to learn even more about that.
 
 solved questions in over 100 situations with disaster character
 
