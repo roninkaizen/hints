@@ -14,8 +14,8 @@ also working on testnets, poa-based structures and virtualized solutions,
 got also into the "docker world" in may 2019, 
 being also active participant in the goerli-testnet.
 
-willing to work on infrastructural planning and implementing solid, reliable structres
-to enable evm-based contract engines.
+willing to work on infrastructural planning and implementing solid, reliable structures
+to enable evm-based contract engines to run in a smooth manner for long periods without any interruption.
 
 experienced in training other people in "what i do"- as well,
 
