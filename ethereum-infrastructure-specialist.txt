@@ -1,10 +1,12 @@
 name:roninkaizen
 interest:ethereum
 detailled interested: providing infrastructural tests and operational knowledge about nodes and their "behaviour"
-experience: 6000 hours with parity-ethereum (former parity)
-experienceIb: 5000 hours with OpenEthereum (former parity-ethereum)
-experienceII: 4500 hours with geth (go-ethereum)
-experienceIII: 4000 hours with nethermind (nethermind.io, since march 2019)
+detailled interested2: providing nodes for users and solving their questions while connecting and working with them
+detailled interested3: bridging the idea of enterprise-support with the the daily needs of "standard users"
+experience: 6000+ hours with parity-ethereum (former parity)
+experienceIb: 5000+ hours with OpenEthereum (former parity-ethereum)
+experienceII: 4500+ hours with geth (go-ethereum)
+experienceIII: 4000+ hours with nethermind (nethermind.io, since march 2019)
 experienceIV: 600 hours with pantheon (http://pegasys.tech)
 experienceV: 200 hours with besu (http://pegasys.tech)
 
