@@ -10,11 +10,11 @@ for actual prices
 
 wallets and usability
 
-metamask as browser extension
-https://metamask.io/
-and
+metamask as browser extension and as app
+https://metamask.io/ 
+
 status.im/
-for usage with mobile
+for usage with mobile devices
 
 
 for changing/swaping token to ether or vice versa
@@ -25,7 +25,10 @@ or https://uniswap.org
 https://1inch.exchange/
 same but different layout
 
-or from metamask-browser-extension builtin function
+https://cowswap.exchange/#/swap/
+same but with built-in MEW protection
+
+or swap from metamask-browser-extension builtin function
 
 
 overview of dapps using or integrating ETH
@@ -34,22 +37,40 @@ https://www.stateofthedapps.com/rankings/platform/ethereum
 
 naming yourself
 https://ens.domains
-for registration
+for registration 
 
 and opensea.io
 https://opensea.io/ as marketplace for names and digital collectibles
 
-for home transaction with keycard read this for instance
+Hardware Wallet
         
 https://blog.gridplus.io/readable-ethereum-transactions-a-new-standard-945c5e9ef2c7?gi=3f64bec43883
 a wallet with a terminal and a key-card- very interesting
 
-trustworthy 2 or more party wallet (combined more than one person-decisionsets)
+trezor
+https://trezor.io 
+
+ledger
+https://www.ledger.com/
+
+MultiSig- Wallets
+trustworthy, 2 or more party-wallet (combined more than one person-decisionsets)
 https://gnosis-safe.io/#getting-started
 
+
+Blockchain-Explorer
 except from my above mentioned news channel the overview from etherscan as blockchain explorer
 https://www.etherscan.io 
 as biggest blockchain-explorer of many
+
+second blockchain-explorer for eth
+https://etherchain.org/
+
+also interesting
+blockscout.com/
+
+News and information
+
 shows a english oriented list of news sources about ethereum
 https://etherscan.io/directory/News_And_Forums
 
@@ -67,10 +88,8 @@ https://deadcoins.com/
 and
 https://etherscamdb.info/scams
 
-second blockchain-explorer for eth
-https://etherchain.org/
 
-Now something about the core
+About the core
 https://ethereum.org/en/developers/docs/evm/
 https://ethereum.org/en/developers/docs/smart-contracts/
 https://karl.tech/learning-solidity-part-1-deploy-a-contract/
@@ -81,12 +100,16 @@ https://courses.blockgeeks.com/course/eth-build/
 https://docs.ethhub.io/
 http://veenspace.com/ethereum
 
-3d visualisation of relations
+3d visualisation of relations (3D-explorer of Bitcoin)
 https://blockchain3d.info/
 
-slightly reduced
+eyecandy over all!
+https://txstreet.com/
+
+slightly reduced visualisation
 http://ethviewer.live/
 
+first book co-authored via github
 https://ethereumbook.info/
 
 also great informative source about actual client implementations
@@ -106,32 +129,29 @@ great for deeper research
 https://ethresear.ch
 
 some mentionable companies worth to know about
+https://quicknode.com/ web3 provider with 
 https://gnosis.io/ prediction-market and others
 https://golem.network/ rent or sell decentralized-computer"power"
-https://augur.net prediction-market
+https://augur.net decentralized prediction-market
 https://gitcoin.co funding devs/groups/orgs during campaigns
-https://rotki.com/ portfolio-management
-https://dappnode.io 
-https://ava.do/ 
+https://rotki.com/ portfolio-management (ETH-only)
+
 company index
 https://chainsafe.io/work  wide spread dev-network
 https://consensys.net/
 https://www.blockchains.com/ (slock-it)
 https://infura.io biggest
-
 https://azure.microsoft.com/de-de/blog/ethereum-blockchain-as-a-service-now-on-azure/
 
-eyecandy over all!
-https://txstreet.com/
 
-the ethereum foundation
+Ethereum Foundation Blog
 https://blog.ethereum.org/
 
 something very interesting, the enterprise alliance
 https://entethalliance.org/faqs/
 https://entethalliance.org/eea-members/
 
-ergänzt um folgende deutsche aktuelle Beiträge:
+ergänzt um folgende deutsche Beiträge/german:
 https://www.handelszeitung.ch/geld/warum-ethereum-besser-als-bitcoin-ist
 https://www.btc-echo.de/schlagzeilen/ethereum-eth-allzeithoch-ath-gruende-kursexplosion/
 https://coin-update.de/gefahr-fuer-ethereum-dieser-massive-faktor-bremst-den-bull-run-aus/
